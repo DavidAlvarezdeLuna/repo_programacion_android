@@ -5,10 +5,22 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Equipo Gestor de Notas"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiColorNote">
+        <activity
+            android:name=".Ventana_lista_tareas"
+            android:exported="true" />
+        <activity
+            android:name=".tabla_anotaciones"
+            android:exported="true" />
+        <activity
+            android:name=".Ventana_nuevo"
+            android:exported="true" />
+        <activity
+            android:name=".Ventana_nota"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

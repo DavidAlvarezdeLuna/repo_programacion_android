@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.MiColorNote" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/fondo_azulito</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -13,4 +13,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="misBotones" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name = "android:backgroundTint">@color/color_botones</item>
+    </style>
+
+    <style name="misRadioButton" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name = "android:buttonTint">@color/mi_amarillo</item>
+    </style>
+
 </resources>
