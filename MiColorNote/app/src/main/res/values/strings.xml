@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">MiColorNote</string>
+    <string name="label">Note Management Team</string>
+
+    <string name="main_abrir">Open</string>
+    <string name="main_nueva_anotacion">New File</string>
+
+    <string name="nuevo_titulo">Title:</string>
+    <string name="nuevo_nota">Note</string>
+    <string name="nuevo_lista_tareas">Task List</string>
+    <string name="nuevo_selec_plantilla">Select Template</string>
+    <string name="nuevo_selec_blanco">White Sheet</string>
+    <string name="nuevo_selec_rosa">Pink Flowers</string>
+    <string name="nuevo_selec_azul">Blue Flowers</string>
+    <string name="nuevo_crear">Create</string>
+
+    <string name="nota_guardar">Save</string>
+    <string name="nota_sms">SMS</string>
+
+    <string name="sms_texto_a_enviar">Text to Send</string>
+    <string name="sms_num_seleccionado">Selected number:</string>
+    <string name="sms_btn_enviar">Send</string>
+
+    <string name="tareas_hint">Add task...</string>
+
+
+    <string name="ventana_titulo">Confirm Delete</string>
+    <string name="ventana_mensaje">Selected element will be deleted. Continue?</string>
+    <string name="ventana_si">Yes</string>
+    <string name="ventana_no">No</string>
+
+    <string name="anadida_a">added to</string>
+    <string name="guardado_con_exito">Saved succesfully</string>
+
+    <string name="sms_seleccionar_contacto">You must choose a contact</string>
+    <string name="sms_mensaje_enviado">Message sent</string>
+    <string name="sms_numero_no_correcto">The number is not correct...</string>
+
+    <string name="sms_no_tienes_permisos">You do not have permission...</string>
+    <string name="sms_no_puede_enviar">Sorry, your device can not send SMS...</string>
+
+    <string name="ventana_sms_titulo">Send SMS</string>
+    <string name="ventana_sms_mensaje">Are you sure you want to send a SMS?</string>
+
 </resources>

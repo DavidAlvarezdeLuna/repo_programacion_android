@@ -7,6 +7,38 @@
     android:background="@drawable/fondo_flores_transparente2"
     tools:context=".Ventana_lista_tareas">
 
+    <EditText
+        android:id="@+id/txt_titulo_tarea"
+        style="@style/cuadrantesAzules"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:background="@color/fondo_azulito"
+        android:elevation="100dp"
+        android:ems="10"
+        android:hint="@string/tareas_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_crear_tarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:enabled="false"
+        android:onClick="crear_tarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="166dp"
@@ -18,36 +50,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cajera" />
-
-    <EditText
-        android:id="@+id/txt_titulo_tarea"
-        android:layout_width="224dp"
-        android:layout_height="43dp"
-        android:background="@color/fondo_azulito"
-        android:ems="10"
-        android:hint="Añadir tarea..."
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_crear_tarea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:enabled="false"
-        android:onClick="crear_tarea"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@android:drawable/ic_input_add" />
 
     <ImageView
         android:id="@+id/img_volver_lista"
@@ -83,4 +85,16 @@
         app:layout_constraintStart_toStartOf="@+id/img_fondo_lienzo"
         app:layout_constraintTop_toTopOf="@+id/img_fondo_lienzo"
         app:layout_constraintVertical_bias="0.531" />
+
+    <TextView
+        android:id="@+id/txt_titulo_lista"
+        style="@style/textoTitulo"
+        android:layout_width="333dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

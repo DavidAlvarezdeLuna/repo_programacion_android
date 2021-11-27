@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/txt_texto_nota"
+        style="@style/textoGrande"
         android:layout_width="334dp"
         android:layout_height="402dp"
         android:background="@drawable/azul"
@@ -23,10 +24,23 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.185" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:onClick="sms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:srcCompat="@drawable/cartero_sms" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -38,7 +52,7 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915"
+        app:layout_constraintVertical_bias="0.937"
         app:srcCompat="@drawable/asistenta_guardar" />
 
     <Button
@@ -47,38 +61,27 @@
         android:layout_width="112dp"
         android:layout_height="47dp"
         android:onClick="guardar_texto"
-        android:text="GUARDAR"
+        android:text="@string/nota_guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="89dp"
-        android:layout_height="86dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903"
-        app:srcCompat="@drawable/cartero_sms" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_sms"
         style="@style/misBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SMS"
+        android:onClick="sms"
+        android:text="@string/nota_sms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/img_cancelar"
@@ -93,5 +96,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955"
         app:srcCompat="@drawable/flecha_volver" />
+
+    <TextView
+        android:id="@+id/txt_titulo_nota"
+        style="@style/textoTitulo"
+        android:layout_width="330dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

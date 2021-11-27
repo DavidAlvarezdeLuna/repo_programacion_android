@@ -74,7 +74,7 @@ class Ventana_nuevo : AppCompatActivity() {
     fun crear(view:View){
 
         var siguiente:String = intent.getSerializableExtra("siguiente") as String
-        var siguiente_pos:Int = siguiente.toInt()+1
+        var siguiente_pos:Int = siguiente.toInt()
 
         //Recoger titulo del archivo
         var texto_titulo_nuevo:EditText = findViewById(R.id.txt_titulo_nuevo)
@@ -116,7 +116,7 @@ class Ventana_nuevo : AppCompatActivity() {
 
 
         //con los datos recogidos, creo la Anotacion
-        var a:Anotacion = Anotacion(0,tipo_anotacion,titulo_anotacion,fecha_anotacion,hora_anotacion,plantilla_anotacion,"Hola")
+        var a:Anotacion = Anotacion(0,tipo_anotacion,titulo_anotacion,fecha_anotacion,hora_anotacion,plantilla_anotacion,"")
 
         //inserto la anotacion en la base de datos
         ConexionBBDD.addAnotacion(this,a)
@@ -130,7 +130,8 @@ class Ventana_nuevo : AppCompatActivity() {
 
             var id_seleccionado:String = anots.last().id_anotacion.toString()
 
-            intentV1.putExtra("elegido",siguiente_pos.toString())
+            intentV1.putExtra("elegido",id_seleccionado)
+            intentV1.putExtra("titulo",anots.last().titulo)
             startActivity(intentV1)
 
             finish()
@@ -143,7 +144,8 @@ class Ventana_nuevo : AppCompatActivity() {
 
             var id_seleccionado:String = anots.last().id_anotacion.toString()
 
-            intentV1.putExtra("elegido",siguiente_pos.toString())
+            intentV1.putExtra("elegido",id_seleccionado)
+            intentV1.putExtra("titulo",anots.last().titulo)
             startActivity(intentV1)
 
             finish()

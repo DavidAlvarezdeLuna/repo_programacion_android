@@ -8,9 +8,9 @@
     tools:context=".Ventana_nuevo">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/cuadrantesAzules"
         android:layout_width="353dp"
         android:layout_height="394dp"
-        android:background="@color/fondo_azulito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,9 +19,10 @@
 
         <TextView
             android:id="@+id/lbl_titulo"
+            style="@style/textoGrande"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Título: "
+            android:text="@string/nuevo_titulo"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +35,7 @@
             android:id="@+id/lbl_titulo2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selecciona Plantilla"
+            android:text="@string/nuevo_selec_plantilla"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -73,14 +74,14 @@
                 android:layout_width="105dp"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="Nota" />
+                android:text="@string/nuevo_nota" />
 
             <RadioButton
                 android:id="@+id/rbo_lista_tareas"
                 style="@style/misRadioButton"
                 android:layout_width="157dp"
                 android:layout_height="wrap_content"
-                android:text="Lista de Tareas"
+                android:text="@string/nuevo_lista_tareas"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="300dp" />
         </RadioGroup>
@@ -103,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:onClick="click_seleccionar_plantilla"
-                android:text="Folio Blanco" />
+                android:text="@string/nuevo_selec_blanco" />
 
             <RadioButton
                 android:id="@+id/rbo_flores_rosas"
@@ -111,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="click_seleccionar_plantilla"
-                android:text="Flores Rosas" />
+                android:text="@string/nuevo_selec_rosa" />
 
             <RadioButton
                 android:id="@+id/rbo_flores_azules"
@@ -119,7 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="click_seleccionar_plantilla"
-                android:text="Flores Azules" />
+                android:text="@string/nuevo_selec_azul" />
         </RadioGroup>
 
         <ImageView
@@ -157,7 +158,7 @@
         android:layout_height="47dp"
         android:enabled="false"
         android:onClick="crear"
-        android:text="CREAR"
+        android:text="@string/nuevo_crear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"

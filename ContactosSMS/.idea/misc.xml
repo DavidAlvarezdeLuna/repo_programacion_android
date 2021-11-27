@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/repo_programacion_android/ContactosSMS/app/src/main/res/layout/activity_listado_contactos.xml" value="0.17481884057971014" />
+        <entry key="..\:/repo_programacion_android/ContactosSMS/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/repo_programacion_android/ContactosSMS/app/src/main/res/layout/item_layout.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/activity_listado_contactos.xml" value="0.4026268115942029" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.42857142857142855" />
+        <entry key="app/src/main/res/layout/item_layout.xml" value="0.4026268115942029" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

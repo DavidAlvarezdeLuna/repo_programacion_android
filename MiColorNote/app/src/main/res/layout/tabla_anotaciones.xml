@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/transparencia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:alpha="0.85">
 
     <TextView
         android:id="@+id/txt_titulo_anotacion"
+        style="@style/textoPequenio"
         android:layout_width="157dp"
         android:layout_height="64dp"
         android:layout_weight="1"
@@ -15,6 +17,7 @@
 
     <TextView
         android:id="@+id/txt_fecha_anotacion"
+        style="@style/textoPequenio"
         android:layout_width="wrap_content"
         android:layout_height="64dp"
         android:layout_weight="1"
@@ -23,6 +26,7 @@
 
     <TextView
         android:id="@+id/txt_hora_anotacion"
+        style="@style/textoPequenio"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_weight="1"

@@ -5,6 +5,7 @@ import Auxiliar.ConexionBBDD
 import Auxiliar.Parametro
 import Conexion.AdminSQLIteConexion
 import Modelo.Anotacion
+import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -34,8 +35,10 @@ class MainActivity : AppCompatActivity() {
         var adaptador = MiAdaptadorVH(this,R.layout.tabla_anotaciones, ConexionBBDD.obtenerAnotaciones(this),seleccionado)
         lista_anots.adapter = adaptador
 
+        var ventanaActual:MainActivity = this
+
         var boton_abrir:Button = findViewById(R.id.btn_abrir)
-            boton_abrir.isVisible = false
+        boton_abrir.isVisible = false
 
 
         lista_anots.onItemClickListener = object: AdapterView.OnItemClickListener {
@@ -46,8 +49,17 @@ class MainActivity : AppCompatActivity() {
                 idElemnto: Long
             ) {
 
-                seleccionado = pos
-                boton_abrir.isVisible = true
+                if(pos == seleccionado){
+                    seleccionado =-1
+                    boton_abrir.isVisible = false
+                }else{
+                    seleccionado = pos
+                    boton_abrir.isVisible = true
+                }
+
+                var adaptador = MiAdaptadorVH(ventanaActual,R.layout.tabla_anotaciones, ConexionBBDD.obtenerAnotaciones(ventanaActual),seleccionado)
+                lista_anots.adapter = adaptador
+
             }
         }
 
@@ -64,17 +76,17 @@ class MainActivity : AppCompatActivity() {
 
                 val dialogo: AlertDialog.Builder = AlertDialog.Builder(this@MainActivity)
                 dialogo.setIcon(R.drawable.asistente_cancelar)
-                dialogo.setTitle("Confirmar borrado")
-                dialogo.setMessage("¿Desea borrar la anotacion " + anots.get(pos).titulo +"?")
+                dialogo.setTitle(R.string.ventana_titulo)
+                dialogo.setMessage(R.string.ventana_mensaje)
                 dialogo.setCancelable(false)
-                dialogo.setPositiveButton("Si",
+                dialogo.setPositiveButton(R.string.ventana_si,
                     DialogInterface.OnClickListener { dialogo, id ->
                         ConexionBBDD.delAnotacion(this@MainActivity, anots.get(pos).id_anotacion)
                         var intentV1 = Intent(this@MainActivity,MainActivity::class.java)
                         startActivity(intentV1)
                         finish()
                     })
-                dialogo.setNegativeButton("No",
+                dialogo.setNegativeButton(R.string.ventana_no,
                     DialogInterface.OnClickListener { dialogo, id -> "cancelar" })
                 dialogo.show()
 
@@ -95,7 +107,8 @@ class MainActivity : AppCompatActivity() {
 
                 var intentV1 = Intent(this,Ventana_nota::class.java)
 
-                intentV1.putExtra("elegido",(seleccionado+1).toString())
+                intentV1.putExtra("elegido",(anots.get(seleccionado).id_anotacion).toString())
+                intentV1.putExtra("titulo",anots.get(seleccionado).titulo)
 
                 startActivity(intentV1)
                 finish()
@@ -105,7 +118,8 @@ class MainActivity : AppCompatActivity() {
 
                     var intentV1 = Intent(this,Ventana_lista_tareas::class.java)
 
-                    intentV1.putExtra("elegido",(seleccionado+1).toString())
+                    intentV1.putExtra("elegido",(anots.get(seleccionado).id_anotacion).toString())
+                    intentV1.putExtra("titulo",anots.get(seleccionado).titulo)
 
                     startActivity(intentV1)
                     finish()

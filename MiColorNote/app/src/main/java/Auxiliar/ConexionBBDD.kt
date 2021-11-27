@@ -124,6 +124,16 @@ object ConexionBBDD {
         return cant
     }
 
+    fun modFoto(contexto: AppCompatActivity, t:Tarea, id:Int):Int {
+        val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
+        val bd = admin.writableDatabase
+        val registro = ContentValues()
+        registro.put("foto", id.toString())
+        val cant = bd.update("tareas", registro, "id_tarea='${id}'", null)
+        bd.close()
+        return cant
+    }
+
 
     fun obtenerAnotaciones(contexto: AppCompatActivity):ArrayList<Anotacion>{
         var lista_Anotaciones:ArrayList<Anotacion> = ArrayList(0)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiColorNote</string>
+    <string name="label">Equipo Gestor de Notas</string>
+
+    <string name="main_abrir">Abrir</string>
+    <string name="main_nueva_anotacion">Nueva anotación</string>
+
+    <string name="nuevo_titulo">Título:</string>
+    <string name="nuevo_nota">Nota</string>
+    <string name="nuevo_lista_tareas">Lista de Tareas</string>
+    <string name="nuevo_selec_plantilla">Selecciona Plantilla</string>
+    <string name="nuevo_selec_blanco">Folio Blanco</string>
+    <string name="nuevo_selec_rosa">Flores Rosas</string>
+    <string name="nuevo_selec_azul">Flores Azules</string>
+    <string name="nuevo_crear">Crear</string>
+
+    <string name="nota_guardar">Guardar</string>
+    <string name="nota_sms">SMS</string>
+
+    <string name="sms_texto_a_enviar">Texto a Enviar</string>
+    <string name="sms_num_seleccionado">Número seleccionado:</string>
+    <string name="sms_btn_enviar">Enviar</string>
+
+    <string name="tareas_hint">Añadir tarea...</string>
+
+
+    <string name="ventana_titulo">Confirmar Borrado</string>
+    <string name="ventana_mensaje">El elemento seleccionado será eliminado ¿Continuar?</string>
+    <string name="ventana_si">Si</string>
+    <string name="ventana_no">No</string>
+
+    <string name="anadida_a">añadida a</string>
+    <string name="guardado_con_exito">Guardado con éxito</string>
+
+    <string name="sms_seleccionar_contacto">Debes seleccionar un contacto</string>
+    <string name="sms_mensaje_enviado">Mensaje enviado</string>
+    <string name="sms_numero_no_correcto">El número no es correcto...</string>
+
+    <string name="sms_no_tienes_permisos">No tienes los permisos requeridos...</string>
+    <string name="sms_no_puede_enviar">Lo sentimos, tu dispositivo probablemente no pueda enviar SMS...</string>
+
+    <string name="ventana_sms_titulo">Enviar SMS</string>
+    <string name="ventana_sms_mensaje">¿Seguro que quieres enviar el SMS?</string>
+
+
+
+</resources>

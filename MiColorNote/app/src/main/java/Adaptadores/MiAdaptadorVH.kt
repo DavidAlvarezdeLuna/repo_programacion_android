@@ -59,7 +59,6 @@ class MiAdaptadorVH : ArrayAdapter<Anotacion> {
         holder.texto_fecha_anotacion?.text = valor.fecha
         holder.texto_hora_anotacion?.text = valor.hora
 
-        Log.e("mimensaje","4")
 
         if (valor.tipo == "nota") {
             holder.texto_titulo_anotacion?.setBackgroundColor(Color.WHITE)
@@ -70,7 +69,13 @@ class MiAdaptadorVH : ArrayAdapter<Anotacion> {
             holder.texto_fecha_anotacion?.setBackgroundColor(Color.CYAN)
             holder.texto_hora_anotacion?.setBackgroundColor(Color.CYAN)
         }
-        Log.e("mimensaje","6")
+
+        if(position == seleccionado){
+            holder.texto_titulo_anotacion?.setBackgroundResource(R.color.color_botones)
+            holder.texto_fecha_anotacion?.setBackgroundResource(R.color.color_botones)
+            holder.texto_hora_anotacion?.setBackgroundResource(R.color.color_botones)
+        }
+
         return view!!
     }
 

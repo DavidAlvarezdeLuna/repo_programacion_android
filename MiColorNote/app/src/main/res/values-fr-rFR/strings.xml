@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiColorNote</string>
+    <string name="label">Équipe de Gestion des Notes</string>
+
+    <string name="main_abrir">Ouvrir</string>
+    <string name="main_nueva_anotacion">Nouveau Annotation</string>
+
+    <string name="nuevo_titulo">Títre:</string>
+    <string name="nuevo_nota">Remarque</string>
+    <string name="nuevo_lista_tareas">Choses à faire</string>
+    <string name="nuevo_selec_plantilla">Sélectionner Modèle</string>
+    <string name="nuevo_selec_blanco">Feuille Blanc</string>
+    <string name="nuevo_selec_rosa">Fleurs Roses</string>
+    <string name="nuevo_selec_azul">Fleurs Bleus</string>
+    <string name="nuevo_crear">Créer</string>
+
+    <string name="nota_guardar">Sauvegarder</string>
+    <string name="nota_sms">SMS</string>
+
+    <string name="sms_texto_a_enviar">Texte à Envoyer</string>
+    <string name="sms_num_seleccionado">Numéro sélectionné:</string>
+    <string name="sms_btn_enviar">Envoyer</string>
+
+    <string name="tareas_hint">Ajouter tâche...</string>
+
+
+    <string name="ventana_titulo">Confirmer la Supression</string>
+    <string name="ventana_mensaje">lélément sélectionné sera effacé. Continuer?</string>
+    <string name="ventana_si">Oui</string>
+    <string name="ventana_no">Non</string>
+
+    <string name="anadida_a">ajouté à</string>
+    <string name="guardado_con_exito">Enregistré avec succès</string>
+
+    <string name="sms_seleccionar_contacto">Vous dever choisir un contact</string>
+    <string name="sms_mensaje_enviado">Message envoyé</string>
+    <string name="sms_numero_no_correcto">Le numéro nést pas correct...</string>
+
+    <string name="sms_no_tienes_permisos">Tu nas pas dautorisations</string>
+    <string name="sms_no_puede_enviar">votre appareil ne peut pas envoyer de SMS</string>
+
+    <string name="ventana_sms_titulo">Envoyer SMS</string>
+    <string name="ventana_sms_mensaje">bien sùr tu veux envoyer un SMS?</string>
+
+
+</resources>

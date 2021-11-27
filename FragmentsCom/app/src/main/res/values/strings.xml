@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fragments Com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Text to replace</string>
+</resources>
