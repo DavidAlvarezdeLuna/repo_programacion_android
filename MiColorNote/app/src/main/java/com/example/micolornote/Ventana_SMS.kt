@@ -124,7 +124,7 @@ class Ventana_SMS : AppCompatActivity() {
                         //Sacamos todos los números de ese contacto.
                         while (pCur!!.moveToNext()) {
                             val phoneNo = pCur!!.getString(pCur!!.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER).toInt())
-                            //Esto son los números asociados a ese contacto. Ahora mismo no hacemos nada con ellos.
+
                         }
                         pCur!!.close()
                     }
@@ -161,7 +161,7 @@ class Ventana_SMS : AppCompatActivity() {
                         while (pCur!!.moveToNext()) {
                             val phoneNo = pCur!!.getString(pCur!!.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER).toInt())
                             listaNums!!.add(phoneNo)
-                            //Esto son los números asociados a ese contacto. Ahora mismo no hacemos nada con ellos.
+
                         }
 
                         var contact:Contacto = Contacto(id,nombre,listaNums)
@@ -236,7 +236,6 @@ class Ventana_SMS : AppCompatActivity() {
             }
         }
     }
-
 
     fun volver(view: View){
         finish();

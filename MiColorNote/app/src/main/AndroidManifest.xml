@@ -12,9 +12,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher4"
+        android:icon="@mipmap/ic_launcher6"
         android:label="Equipo Gestor de Notas"
-        android:roundIcon="@mipmap/ic_launcher4_round"
+        android:roundIcon="@mipmap/ic_launcher6_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiColorNote">
         <activity

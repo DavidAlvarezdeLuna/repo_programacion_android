@@ -97,7 +97,6 @@ class Ventana_nota : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == permissionRequest) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                //miMensaje();
                 //Toast.makeText(this, "Permisos concedidos...", Toast.LENGTH_SHORT).show();
             } else {
                 //Toast.makeText(this, "No tienes los permisos requeridos...", Toast.LENGTH_SHORT).show();

@@ -19,7 +19,6 @@ class Ventana_nuevo : AppCompatActivity() {
 
 
         var texto_titulo_nuevo:EditText = findViewById(R.id.txt_titulo_nuevo)
-        //var titulo_anotacion:String = texto_titulo_nuevo.text.toString()
 
         var boton_crear:Button = findViewById(R.id.btn_crear)
         var imagen_crear:ImageView = findViewById(R.id.img_crear)

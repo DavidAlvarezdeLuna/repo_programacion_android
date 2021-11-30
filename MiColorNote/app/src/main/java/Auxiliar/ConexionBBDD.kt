@@ -53,25 +53,6 @@ object ConexionBBDD {
         bd.close()
     }
 
-    /*fun addTarea(contexto: AppCompatActivity, t: Tarea, id_anotacion: Int){
-
-        val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
-        val bd = admin.writableDatabase
-
-        val registro = ContentValues()
-
-        registro.putNull("id_tarea")
-        registro.put("id_anotacion",id_anotacion)
-        registro.put("texto", t.texto)
-        registro.put("marcado",t.marcado)
-        registro.put("foto",t.foto)
-
-        bd.insert("tareas", null, registro)
-
-        bd.close()
-    }*/
-
-
     fun delAnotacion(contexto: AppCompatActivity, id_anotacion: Int):Int{
         val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
         val bd = admin.writableDatabase
@@ -93,15 +74,6 @@ object ConexionBBDD {
     }
 
     //texto, estado de tarea y foto de tarea se deben modificar por separado
-    /*fun modSistema(contexto:AppCompatActivity, a:Anotacion, so:String, id:Int):Int {
-        val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
-        val bd = admin.writableDatabase
-        val registro = ContentValues()
-        registro.put("sistema", so)
-        val cant = bd.update("encuestas", registro, "id_enc='${id}'", null)
-        bd.close()
-        return cant
-    }*/
 
     fun modTexto(contexto:AppCompatActivity, texto:String, id:Int):Int {
         val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
@@ -124,7 +96,7 @@ object ConexionBBDD {
         return cant
     }
 
-    fun modFoto(contexto: AppCompatActivity, t:Tarea, id:Int):Int {
+    fun modFoto(contexto: AppCompatActivity, id:Int):Int {
         val admin = AdminSQLIteConexion(contexto, nombreBD, null, 1)
         val bd = admin.writableDatabase
         val registro = ContentValues()
@@ -173,60 +145,6 @@ object ConexionBBDD {
     }
 
 
-    /*fun id_maximo(db: SQLiteDatabase): Int{
 
-        //sacar el numero actual de registros
-        val query_cuenta = db.rawQuery("select COUNT(id_enc) FROM encuestas",null)
-        var cuenta_registros:Int = 0
-
-        while(query_cuenta.moveToNext()){
-            cuenta_registros = query_cuenta.getInt(0)
-        }
-
-        //sacar el id que toca poner al nuevo registro
-        val id_maximo = db.rawQuery("select MAX(id_enc) FROM encuestas GROUP BY id_enc",null)
-        var resul:Int = 0
-        Log.e("mimensaje","entro en if "+cuenta_registros.toString())
-
-        if(cuenta_registros == 0){
-            resul = 1
-        }else{
-            while(id_maximo.moveToNext()){
-                resul = id_maximo.getInt(0)+1
-            }
-        }
-
-        Log.e("mimensaje","acabo funcion id_maximo " + resul.toString())
-        return resul
-
-    }
-
-    fun maximo_esp_enc(db: SQLiteDatabase): Int{
-
-        //sacar el numero actual de registros
-        val query_cuenta = db.rawQuery("select COUNT(id) FROM especialidades_encuestado",null)
-        var cuenta_registros:Int = 0
-
-        while(query_cuenta.moveToNext()){
-            cuenta_registros = query_cuenta.getInt(0)
-        }
-
-        //sacar el id que toca poner al nuevo registro
-        val id_maximo = db.rawQuery("select MAX(id) FROM especialidades_encuestado GROUP BY id",null)
-        var resul:Int = 0
-        Log.e("mimensaje","entro en if "+cuenta_registros.toString())
-
-        if(cuenta_registros == 0){
-            resul = 1
-        }else{
-            while(id_maximo.moveToNext()){
-                resul = id_maximo.getInt(0)+1
-            }
-        }
-
-        Log.e("mimensaje","acabo funcion id_maximo " + resul.toString())
-        return resul
-
-    }*/
 
 }

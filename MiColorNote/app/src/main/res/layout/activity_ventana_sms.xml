@@ -102,9 +102,10 @@
             <TextView
                 android:id="@+id/textView"
                 style="@style/textoGrande"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="287dp"
+                android:layout_height="27dp"
                 android:text="@string/sms_num_seleccionado"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
@@ -117,18 +118,20 @@
                 style="@style/textoGrande"
                 android:layout_width="149dp"
                 android:layout_height="27dp"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.415" />
+                app:layout_constraintVertical_bias="0.428" />
 
             <TextView
                 android:id="@+id/txt_contacto_SMS"
                 style="@style/textoGrande"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="146dp"
+                android:layout_height="25dp"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"

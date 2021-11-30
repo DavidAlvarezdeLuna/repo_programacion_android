@@ -19,12 +19,10 @@ class MiAdaptadorVH : ArrayAdapter<Anotacion> {
     private var seleccionado:Int = 0
 
     constructor(context: Activity, resource: Int, valores: ArrayList<Anotacion>, seleccionado:Int) : super(context, resource) {
-        Log.e("mimensaje","1")
         this.context = context
         this.resource = resource
         this.valores = valores
         this.seleccionado = seleccionado
-        Log.e("mimensaje","2")
     }
 
     override fun getCount(): Int {
@@ -37,8 +35,6 @@ class MiAdaptadorVH : ArrayAdapter<Anotacion> {
 
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-
-        Log.e("mimensaje","3")
 
         var view: View? = convertView
         var holder = ViewHolder()

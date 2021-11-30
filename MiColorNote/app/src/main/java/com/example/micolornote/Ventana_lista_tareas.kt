@@ -2,6 +2,7 @@ package com.example.micolornote
 
 import Adaptadores.MiAdaptadorRecycler
 import Auxiliar.ConexionBBDD
+import Auxiliar.Posicion_RecyclerView
 import Modelo.Anotacion
 import Modelo.Tarea
 import android.Manifest
@@ -20,6 +21,7 @@ import android.view.View
 import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.get
 import androidx.core.widget.doAfterTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -37,6 +39,12 @@ class Ventana_lista_tareas : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_ventana_lista_tareas)
+        
+    }
+
+    override fun onResume() {
+        super.onResume()
         setContentView(R.layout.activity_ventana_lista_tareas)
 
         if (ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED)
@@ -62,9 +70,6 @@ class Ventana_lista_tareas : AppCompatActivity() {
         var miAdapter = MiAdaptadorRecycler(ConexionBBDD.obtenerTareas(this,int_id_seleccionado), this, this, intentAdaptador)
 
         recycler_tars.adapter = miAdapter
-
-        //var txt_plantilla: TextView = findViewById(R.id.txt_texto_nota)
-        //txt_plantilla.text = anots.get(int_pos).texto_nota
 
         var imagen_fondo_lienzo:ImageView = findViewById(R.id.img_fondo_lienzo)
 
@@ -101,10 +106,10 @@ class Ventana_lista_tareas : AppCompatActivity() {
 
         }
 
-        recycler_tars.setOnClickListener(){
 
-        }
     }
+
+
 
     fun crear_tarea(view: View){
 
@@ -112,9 +117,6 @@ class Ventana_lista_tareas : AppCompatActivity() {
         var int_id_seleccionado:Int = id_seleccionado.toInt()
 
         var texto_titulo_tarea:TextView = findViewById(R.id.txt_titulo_tarea)
-
-        //var texto_titulo_lista:TextView = findViewById(R.id.txt_titulo_lista)
-        //texto_titulo_lista.text = intent.getStringExtra("titulo") as String
 
         var anots: ArrayList<Anotacion> = ConexionBBDD.obtenerAnotaciones(this)
 
@@ -143,6 +145,28 @@ class Ventana_lista_tareas : AppCompatActivity() {
         finish()
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        try {
 
+            if(resultCode != 0){
+
+                ConexionBBDD.modFoto(this, Posicion_RecyclerView.id_recycler)
+                if (requestCode == cameraRequest) {
+                    val photo: Bitmap = data?.extras?.get("data") as Bitmap
+
+                    var fotoFichero = File(getFilesDir().getPath(), Posicion_RecyclerView.id_recycler.toString()+".jpg")
+                    var uri = Uri.fromFile(fotoFichero)
+                    var fileOutStream = FileOutputStream(fotoFichero)
+                    photo.compress(Bitmap.CompressFormat.PNG, 100, fileOutStream);
+                    fileOutStream.flush();
+                    fileOutStream.close();
+                }
+
+            }
+        }catch(e: Exception){
+            Log.e("mimensaje",e.toString())
+        }
+    }
 
 }
