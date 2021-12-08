@@ -7,15 +7,80 @@
     tools:context=".Gestiones_jefe">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_listar_profesores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="listarTodosProfesores"
         android:text="@string/gestion_lista_profes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btn_buscar_profesor"
+        android:layout_width="137dp"
+        android:layout_height="84dp"
+        android:onClick="buscarPorID"
+        android:text="@string/gestion_buscar_profe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/btn_borrar_profesor"
+        android:layout_width="131dp"
+        android:layout_height="86dp"
+        android:onClick="borrarPorID"
+        android:text="@string/gestion_borrar_profe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <Button
+        android:id="@+id/btn_registrar_profesor"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:onClick="nuevoRegistro"
+        android:text="@string/gestion_registrar_profe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/btn_modificar_profesor"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:onClick="modificarRegistro"
+        android:text="Modificar profesor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <EditText
+        android:id="@+id/txt_id_buscar_profesor"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 </androidx.constraintlayout.widget.ConstraintLayout>

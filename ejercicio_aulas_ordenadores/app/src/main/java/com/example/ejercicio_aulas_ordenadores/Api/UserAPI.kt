@@ -13,21 +13,21 @@ interface UserAPI {
     @GET("listaprofesores")
     fun getUsuarioss(): Call<MutableList<Profesor>>
 
-    /*@GET("listado/{id}")
-    fun getUnUsuario(@Path("id") id:String): Call<Usuario>
+    @GET("listaprofesores/{id}")
+    fun getUnUsuario(@Path("id") id:String): Call<Profesor>
 
     @Headers("Content-Type:application/json")
-    @POST("registrar")
-    fun addUsuario(@Body info: Usuario) : Call<ResponseBody>
+    @POST("registrarprofesor")
+    fun addUsuario(@Body info: Profesor) : Call<ResponseBody>
 
-    @Headers("Content-Type:application/json")
+    /*@Headers("Content-Type:application/json")
     @POST("login")
-    fun loginUsuario(@Body info: Usuario) : Call<MutableList<Rol>>
+    fun loginUsuario(@Body info: Usuario) : Call<MutableList<Rol>>*/
 
-    @DELETE("borrar/{dni}")
-    fun borrarUsuario(@Path("dni") id:String) : Call<ResponseBody>
+    @DELETE("borrarprofesor/{id}")
+    fun borrarUsuario(@Path("id") id:String) : Call<ResponseBody>
 
     @Headers("Content-Type:application/json")
-    @PUT("modificar")
-    fun modUsuario(@Body info: Usuario) : Call<ResponseBody>*/
+    @PUT("modificarprofesor")
+    fun modUsuario(@Body info: Profesor) : Call<ResponseBody>
 }
