@@ -10,6 +10,7 @@ import retrofit2.http.*
 
 interface UserAPI {
 
+    //FUNCIONES DE PROFESORES
     @GET("listaprofesores")
     fun getUsuarioss(): Call<MutableList<Profesor>>
 
@@ -30,4 +31,23 @@ interface UserAPI {
     @Headers("Content-Type:application/json")
     @PUT("modificarprofesor")
     fun modUsuario(@Body info: Profesor) : Call<ResponseBody>
+
+
+    //FUNCIONES DE AULAS
+    @GET("listaaulas")
+    fun getAulass(): Call<MutableList<Aula>>
+
+    @GET("listaaulas/{id_aula}")
+    fun getUnAula(@Path("id_aula") id:String): Call<Aula>
+
+    @Headers("Content-Type:application/json")
+    @POST("registraraula")
+    fun addAula(@Body info: Aula) : Call<ResponseBody>
+
+    @DELETE("borraraula/{id_aula}")
+    fun borrarAula(@Path("id_aula") id:String) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @PUT("modificaraula")
+    fun modAula(@Body info: Aula) : Call<ResponseBody>
 }

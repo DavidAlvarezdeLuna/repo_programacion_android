@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ServiceBuilder {
     val client = OkHttpClient.Builder().build()
-    val url = "http://192.168.43.91:5000"
+    val url = "http://192.168.209.130:5000"
     /*
     Importante: 127.0.0.1 no permite ser accedido por motivos de seguridad. Sedebe poner la ip de abajo.
     Por otro lado se necesitarán en Manifes los permisos de Internet y la configuración de un xml (network_security_config.xml) que se añade como xml de actividades.

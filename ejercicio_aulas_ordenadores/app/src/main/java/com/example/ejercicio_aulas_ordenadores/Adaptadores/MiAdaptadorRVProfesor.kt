@@ -8,14 +8,12 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ejercicio_aulas_ordenadores.Modelo.Profesor
-import com.example.ejercicio_aulas_ordenadores.Modelo.Aula
-import com.example.ejercicio_aulas_ordenadores.Modelo.Ordenador
 import com.example.ejercicio_aulas_ordenadores.R
 
-class MiAdaptadorRV (private var context: Context,
-                     private var profesores : ArrayList<Profesor>
+class MiAdaptadorRVProfesor (private var context: Context,
+                             private var profesores : ArrayList<Profesor>
 ) :
-    RecyclerView.Adapter<MiAdaptadorRV.MyViewHolder>() {
+    RecyclerView.Adapter<MiAdaptadorRVProfesor.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.profesores_card, parent, false)
         return MyViewHolder(v)
