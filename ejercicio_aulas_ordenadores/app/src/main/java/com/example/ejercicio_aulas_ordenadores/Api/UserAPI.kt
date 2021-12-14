@@ -50,4 +50,23 @@ interface UserAPI {
     @Headers("Content-Type:application/json")
     @PUT("modificaraula")
     fun modAula(@Body info: Aula) : Call<ResponseBody>
+
+
+    //FUNCIONES DE ORDENADORES
+    @GET("listaordenadores")
+    fun getOrdenadoress(): Call<MutableList<Ordenador>>
+
+    @GET("listaordenador/{id_ordenador}")
+    fun getUnOrdenador(@Path("id_ordenador") id:String): Call<Ordenador>
+
+    @Headers("Content-Type:application/json")
+    @POST("registrarordenador")
+    fun addOrdenador(@Body info: Ordenador) : Call<ResponseBody>
+
+    @DELETE("borrarordenador/{id_ordenador}")
+    fun borrarOrdenador(@Path("id_ordenador") id:String) : Call<ResponseBody>
+
+    @Headers("Content-Type:application/json")
+    @PUT("modificarordenador")
+    fun modOrdenador(@Body info: Ordenador) : Call<ResponseBody>
 }

@@ -227,7 +227,6 @@ def addAula():
     print(data) #Desde Android nos llega en formato diccionario.
     print(data['id_aula'])
     print(data['nombre_aula'])
-    print(data['permisos'])
     if (conex.insertarAula(data['id_aula'],data['nombre_aula'])==0):
         respuesta = {'message': 'Ok.'}
         resp = jsonify(respuesta)

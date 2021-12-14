@@ -17,7 +17,7 @@ class MiAdaptadorRVAula (private var context: Context,
 ) :
     RecyclerView.Adapter<MiAdaptadorRVAula.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.profesores_card, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.aulas_card, parent, false)
         return MyViewHolder(v)
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
