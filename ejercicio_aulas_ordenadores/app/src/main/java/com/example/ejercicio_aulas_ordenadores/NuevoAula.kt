@@ -20,8 +20,7 @@ class NuevoAula : AppCompatActivity() {
 
     lateinit var nuevoId : TextView
     lateinit var nuevoNombre : TextView
-    lateinit var nuevoClave : TextView
-    lateinit var nuevoPermisos : TextView
+
     lateinit var botonAceptar : Button
     var contexto = this
     lateinit var operacion: String
@@ -43,15 +42,20 @@ class NuevoAula : AppCompatActivity() {
 
     }
 
-    fun aceptar(view: View) {
-        val us = Profesor(
+    fun cancelarAula(view: View){
+        finish()
+    }
+
+    fun aceptarAula(view: View) {
+        val us = Aula(
             nuevoId.text.toString(),
             nuevoNombre.text.toString()
         )
+        Log.e("Fernando", nuevoId.text.toString()+" "+nuevoNombre.text.toString())
 
         if (operacion.equals("nuevo")) {
             val request = ServiceBuilder.buildService(UserAPI::class.java)
-            val call = request.addUsuario(us)
+            val call = request.addAula(us)
             call.enqueue(object : Callback<ResponseBody> {
 
                 override fun onResponse(
@@ -89,7 +93,7 @@ class NuevoAula : AppCompatActivity() {
         //---------------- Modificar un registro -----------------
         else {
             val request = ServiceBuilder.buildService(UserAPI::class.java)
-            val call = request.modUsuario(us)
+            val call = request.modAula(us)
             call.enqueue(object : Callback<ResponseBody> {
 
                 override fun onResponse(
