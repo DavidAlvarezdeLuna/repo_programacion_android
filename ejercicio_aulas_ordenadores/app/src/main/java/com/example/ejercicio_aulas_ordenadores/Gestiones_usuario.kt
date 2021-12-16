@@ -14,10 +14,10 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class Gestiones_jefe : AppCompatActivity() {
+class Gestiones_usuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gestiones_jefe)
+        setContentView(R.layout.activity_gestiones_usuario)
     }
 
     //FUNCIONES PROFESORES
@@ -55,20 +55,20 @@ class Gestiones_jefe : AppCompatActivity() {
                 Log.e ("Fernando", response.code().toString())
                 if (response.code() == 200) {
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@Gestiones_jefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Gestiones_usuario, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
                 }
                 else {
                     Log.e("Fernando","Algo ha fallado en el borrado: DNI no encontrado.")
-                    Toast.makeText(this@Gestiones_jefe, "Algo ha fallado en el borrado: DNI no encontrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Gestiones_usuario, "Algo ha fallado en el borrado: DNI no encontrado",Toast.LENGTH_LONG).show()
                 }
                 if (response.isSuccessful){ //Esto es otra forma de hacerlo en lugar de mirar el código.
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@Gestiones_jefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Gestiones_usuario, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 Log.e("Fernando","Algo ha fallado en la conexión.")
-                Toast.makeText(this@Gestiones_jefe, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@Gestiones_usuario, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
             }
         })
     }
@@ -124,20 +124,20 @@ class Gestiones_jefe : AppCompatActivity() {
                 Log.e ("Fernando", response.code().toString())
                 if (response.code() == 200) {
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@Gestiones_jefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Gestiones_usuario, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
                 }
                 else {
                     Log.e("Fernando","Algo ha fallado en el borrado: DNI no encontrado.")
-                    Toast.makeText(this@Gestiones_jefe, "Algo ha fallado en el borrado: DNI no encontrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Gestiones_usuario, "Algo ha fallado en el borrado: DNI no encontrado",Toast.LENGTH_LONG).show()
                 }
                 if (response.isSuccessful){ //Esto es otra forma de hacerlo en lugar de mirar el código.
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@Gestiones_jefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Gestiones_usuario, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 Log.e("Fernando","Algo ha fallado en la conexión.")
-                Toast.makeText(this@Gestiones_jefe, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@Gestiones_usuario, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
             }
         })
     }
@@ -194,20 +194,20 @@ class Gestiones_jefe : AppCompatActivity() {
                 Log.e ("Fernando", response.code().toString())
                 if (response.code() == 200) {
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@Gestiones_jefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Gestiones_usuario, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
                 }
                 else {
                     Log.e("Fernando","Algo ha fallado en el borrado: DNI no encontrado.")
-                    Toast.makeText(this@Gestiones_jefe, "Algo ha fallado en el borrado: DNI no encontrado",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Gestiones_usuario, "Algo ha fallado en el borrado: DNI no encontrado",Toast.LENGTH_LONG).show()
                 }
                 if (response.isSuccessful){ //Esto es otra forma de hacerlo en lugar de mirar el código.
                     Log.e("Fernando","Registro eliminado con éxito.")
-                    Toast.makeText(this@Gestiones_jefe, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Gestiones_usuario, "Registro eliminado con éxito",Toast.LENGTH_SHORT).show()
                 }
             }
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 Log.e("Fernando","Algo ha fallado en la conexión.")
-                Toast.makeText(this@Gestiones_jefe, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@Gestiones_usuario, "Algo ha fallado en la conexión.",Toast.LENGTH_LONG).show()
             }
         })
     }

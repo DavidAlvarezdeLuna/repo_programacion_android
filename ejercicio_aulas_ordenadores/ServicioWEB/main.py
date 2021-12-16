@@ -170,7 +170,7 @@ def getAula(id_aula): #aquí declaramos una función que se llamará cuando se r
 @app.route("/listaordenadores/<id_ordenador>", methods=['GET']) #aquí especificamos la ruta para el endpoint.
 def getOrdenador(id_ordenador): #aquí declaramos una función que se llamará cuando se realice una request a esa url
     print(id)
-    listaOrdenadores = conex.buscarIdAula(id_ordenador)
+    listaOrdenadores = conex.buscarIdOrdenador(id_ordenador)
     print(jsonify(listaOrdenadores))
     if (len(listaOrdenadores) != 0):
         resp = jsonify(listaOrdenadores)

@@ -56,7 +56,7 @@ interface UserAPI {
     @GET("listaordenadores")
     fun getOrdenadoress(): Call<MutableList<Ordenador>>
 
-    @GET("listaordenador/{id_ordenador}")
+    @GET("listaordenadores/{id_ordenador}")
     fun getUnOrdenador(@Path("id_ordenador") id:String): Call<Ordenador>
 
     @Headers("Content-Type:application/json")
