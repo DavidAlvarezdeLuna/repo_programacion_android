@@ -8,52 +8,53 @@
 
     <Button
         android:id="@+id/btn_cerrar_sesion"
+        style="@style/misBotones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volver"
         android:text="Cerrar Sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="413dp"
-        android:layout_height="239dp"
+        android:layout_width="364dp"
+        android:layout_height="215dp"
         android:background="@color/ordenadores"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786">
+        app:layout_constraintVertical_bias="0.813">
 
         <Button
             android:id="@+id/btn_registrar_ordenadores"
-            android:layout_width="123dp"
-            android:layout_height="42dp"
+            style="@style/misBotones"
+            android:layout_width="107dp"
             android:onClick="nuevoRegistroOrdenador"
             android:text="@string/gestion_registrar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintHorizontal_bias="0.019"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.736" />
+            app:layout_constraintVertical_bias="0.902" />
 
         <Button
             android:id="@+id/btn_listar_ordenadores"
-            android:layout_width="85dp"
-            android:layout_height="42dp"
+            style="@style/misBotones"
+            android:layout_width="73dp"
             android:onClick="listarTodosOrdenadores"
             android:text="@string/gestion_lista_profes"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintHorizontal_bias="0.92"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.223" />
+            app:layout_constraintVertical_bias="0.459" />
 
         <TextView
             android:id="@+id/textView6"
@@ -63,9 +64,10 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.074" />
+            app:layout_constraintVertical_bias="0.256" />
 
         <EditText
             android:id="@+id/txt_id_buscar_ordenador"
@@ -76,60 +78,60 @@
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.354" />
+            app:layout_constraintVertical_bias="0.553" />
 
         <Button
             android:id="@+id/btn_modificar_ordenador"
-            android:layout_width="125dp"
-            android:layout_height="37dp"
+            style="@style/misBotones"
+            android:layout_width="108dp"
             android:onClick="modificarRegistroOrdenador"
             android:text="@string/gestion_modificar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.742" />
+            app:layout_constraintVertical_bias="0.91" />
 
         <Button
             android:id="@+id/btn_borrar_ordenador2"
-            android:layout_width="102dp"
-            android:layout_height="41dp"
+            style="@style/misBotones"
+            android:layout_width="93dp"
             android:onClick="borrarPorIDOrdenador"
             android:text="@string/gestion_borrar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintHorizontal_bias="0.94"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.732" />
+            app:layout_constraintVertical_bias="0.892" />
 
         <Button
             android:id="@+id/btn_buscar_ordenador"
-            android:layout_width="99dp"
-            android:layout_height="42dp"
+            style="@style/misBotones"
+            android:layout_width="87dp"
             android:onClick="buscarPorIDOrdenador"
             android:text="@string/gestion_buscar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintHorizontal_bias="0.018"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.223" />
+            app:layout_constraintVertical_bias="0.462" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="411dp"
-        android:layout_height="214dp"
+        android:layout_width="361dp"
+        android:layout_height="186dp"
         android:background="@color/aulas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334">
+        app:layout_constraintVertical_bias="0.375">
 
         <TextView
             android:id="@+id/textView5"
@@ -146,21 +148,21 @@
 
         <Button
             android:id="@+id/btn_borrar_aula"
-            android:layout_width="108dp"
-            android:layout_height="40dp"
+            style="@style/misBotones"
+            android:layout_width="90dp"
             android:onClick="borrarPorIDAula"
             android:text="@string/gestion_borrar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintHorizontal_bias="0.94"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.752" />
+            app:layout_constraintVertical_bias="0.787" />
 
         <Button
             android:id="@+id/btn_listar_aulas"
+            style="@style/misBotones"
             android:layout_width="88dp"
-            android:layout_height="42dp"
             android:onClick="listarTodosAulas"
             android:text="@string/gestion_lista_profes"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -172,8 +174,8 @@
 
         <Button
             android:id="@+id/btn_modificar_aula"
-            android:layout_width="130dp"
-            android:layout_height="43dp"
+            style="@style/misBotones"
+            android:layout_width="107dp"
             android:onClick="modificarRegistroAula"
             android:text="@string/gestion_modificar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -184,21 +186,21 @@
 
         <Button
             android:id="@+id/btn_registrar_aula"
-            android:layout_width="121dp"
-            android:layout_height="41dp"
+            style="@style/misBotones"
+            android:layout_width="111dp"
             android:onClick="nuevoRegistroAula"
             android:text="@string/gestion_registrar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.016"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.797" />
+            app:layout_constraintVertical_bias="0.794" />
 
         <Button
             android:id="@+id/btn_buscar_aula"
-            android:layout_width="101dp"
-            android:layout_height="41dp"
+            style="@style/misBotones"
+            android:layout_width="87dp"
             android:onClick="buscarPorIDAula"
             android:text="@string/gestion_buscar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -223,60 +225,60 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="411dp"
-        android:layout_height="173dp"
+        android:layout_width="367dp"
+        android:layout_height="154dp"
         android:background="@color/profesores"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.002">
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/btn_borrar_profesor"
-            android:layout_width="98dp"
-            android:layout_height="43dp"
+            style="@style/misBotones"
+            android:layout_width="88dp"
             android:onClick="borrarPorID"
             android:text="@string/gestion_borrar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintHorizontal_bias="0.942"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.792" />
+            app:layout_constraintVertical_bias="0.789" />
 
         <Button
             android:id="@+id/btn_registrar_profesor"
-            android:layout_width="119dp"
-            android:layout_height="43dp"
+            style="@style/misBotones"
+            android:layout_width="108dp"
             android:onClick="nuevoRegistro"
             android:text="@string/gestion_registrar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.003"
+            app:layout_constraintHorizontal_bias="0.027"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.761" />
+            app:layout_constraintVertical_bias="0.789" />
 
         <Button
             android:id="@+id/btn_modificar_profesor"
-            android:layout_width="130dp"
-            android:layout_height="39dp"
+            style="@style/misBotones"
+            android:layout_width="107dp"
             android:onClick="modificarRegistro"
             android:text="@string/gestion_modificar_profe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.765" />
+            app:layout_constraintVertical_bias="0.789" />
 
         <Button
             android:id="@+id/btn_buscar_profesor"
-            android:layout_width="103dp"
-            android:layout_height="40dp"
+            style="@style/misBotones"
+            android:layout_width="88dp"
             android:onClick="buscarPorID"
             android:text="@string/gestion_buscar_profe"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.052"
@@ -286,8 +288,8 @@
 
         <Button
             android:id="@+id/btn_listar_profesores"
-            android:layout_width="77dp"
-            android:layout_height="43dp"
+            style="@style/misBotones"
+            android:layout_width="71dp"
             android:onClick="listarTodosProfesores"
             android:text="@string/gestion_lista_profes"
             app:layout_constraintBottom_toBottomOf="parent"

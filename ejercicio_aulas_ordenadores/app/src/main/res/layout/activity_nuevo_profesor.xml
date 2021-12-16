@@ -13,25 +13,13 @@
         android:ems="10"
         android:hint="sera un buttongroup"
         android:inputType="textPersonName"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
-
-    <Button
-        android:id="@+id/btnAceptarNuevo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="aceptar"
-        android:text="Aceptar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.583" />
 
     <TextView
         android:id="@+id/txtTfnoNuevo"
@@ -54,10 +42,23 @@
         android:text="Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.44" />
+
+    <Button
+        android:id="@+id/btnAceptarNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="aceptar"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
 
     <EditText
         android:id="@+id/txt_id_nuevo"
@@ -139,5 +140,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.201" />
+
+    <RadioGroup
+        android:layout_width="224dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296">
+
+        <RadioButton
+            android:id="@+id/btn_jefe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Jefe" />
+
+        <RadioButton
+            android:id="@+id/btn_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

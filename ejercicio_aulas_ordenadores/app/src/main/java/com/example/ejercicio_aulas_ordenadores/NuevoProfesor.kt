@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
 import com.example.ejercicio_aulas_ordenadores.Api.ServiceBuilder
@@ -21,6 +22,10 @@ class NuevoProfesor : AppCompatActivity() {
     lateinit var nuevoClave : TextView
     lateinit var nuevoPermisos : TextView
     lateinit var botonAceptar : Button
+
+    lateinit var botonJefe: RadioButton
+    lateinit var botonUsuario: RadioButton
+
     var contexto = this
     lateinit var operacion: String
 
@@ -33,6 +38,9 @@ class NuevoProfesor : AppCompatActivity() {
         nuevoClave = findViewById(R.id.txt_clave_nuevo)
         nuevoPermisos = findViewById(R.id.txt_permisos_nuevo)
         botonAceptar = findViewById(R.id.btnAceptarNuevo)
+
+        botonJefe = findViewById(R.id.btn_jefe)
+        botonUsuario = findViewById(R.id.btn_usuario)
 
         operacion = intent.getStringExtra("operacion").toString()
         val idBuscar = intent.getStringExtra("id").toString()
@@ -47,11 +55,17 @@ class NuevoProfesor : AppCompatActivity() {
     }
 
     fun aceptar(view:View) {
+
+        var perm = "0"
+        if (botonJefe.isChecked){
+            perm = "1"
+        }
+
         val us = Profesor(
             nuevoId.text.toString(),
             nuevoNombre.text.toString(),
             nuevoClave.text.toString(),
-            nuevoPermisos.text.toString()
+            perm
 
         )
 
