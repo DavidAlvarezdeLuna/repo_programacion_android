@@ -7,19 +7,6 @@
     tools:context=".NuevoOrdenador">
 
     <Button
-        android:id="@+id/btnCancelarNuevo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="cancelarOrdenador"
-        android:text="Cancelar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.754"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <Button
         android:id="@+id/btnAceptarNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,10 +14,23 @@
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.872" />
+
+    <Button
+        android:id="@+id/btnCancelarNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cancelarOrdenador"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
 
     <EditText
         android:id="@+id/txt_id_ordenador_nuevo"
@@ -64,6 +64,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
+        android:enabled="false"
         android:hint="Introduce un id de aula..."
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -166,5 +167,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.353" />
+
+    <ListView
+        android:id="@+id/lsv_aulas"
+        android:layout_width="276dp"
+        android:layout_height="151dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="191dp"
+        android:layout_height="23dp"
+        android:text="Lista de aulas disponibles"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.ejercicio_aulas_ordenadores.Adaptadores.MiAdaptadorRVAula
 import com.example.ejercicio_aulas_ordenadores.Api.ServiceBuilder
 import com.example.ejercicio_aulas_ordenadores.Api.UserAPI
 import com.example.ejercicio_aulas_ordenadores.Modelo.Aula
@@ -46,6 +46,47 @@ class NuevoOrdenador : AppCompatActivity() {
             getBuscarUnOrdenador(idBuscar)
             nuevoId.isEnabled = false  //No dejamos modificar el id_aula que es la clave del registro.
         }
+
+        var aulas:ArrayList<Aula> = ArrayList()
+        var id_aulas:ArrayList<String> = ArrayList()
+
+        val request = ServiceBuilder.buildService(UserAPI::class.java)
+        val call = request.getAulass()
+
+        call.enqueue(object : Callback<MutableList<Aula>> {
+            override fun onResponse(call: Call<MutableList<Aula>>, response: Response<MutableList<Aula>>) {
+                Log.e ("Fernando", response.code().toString())
+                for (post in response.body()!!) {
+                    aulas.add(Aula(post.id_aula,post.nombre_aula))
+                    id_aulas.add(post.id_aula!!)
+                }
+                if (response.isSuccessful){
+                    //ListView
+                    var lista_aulas: ListView = findViewById(R.id.lsv_aulas)
+                    val adaptador = ArrayAdapter(this@NuevoOrdenador,R.layout.item_lista_aulas,R.id.txt_lsv_aulas,id_aulas)
+                    lista_aulas.adapter = adaptador
+
+                    var carga = 0
+                    lista_aulas.onItemClickListener = object:AdapterView.OnItemClickListener{
+                        override fun onItemClick(parent: AdapterView<*>?, vista: View?, pos: Int, idElemnto: Long) {
+
+                            if(carga != 0){
+                                val texto = id_aulas.get(pos)
+                                nuevoAula.text = texto
+                            }
+
+                            carga++
+
+                        }
+                    }
+
+                }
+            }
+            override fun onFailure(call: Call<MutableList<Aula>>, t: Throwable) {
+                Toast.makeText(this@NuevoOrdenador, "${t.message}", Toast.LENGTH_SHORT).show()
+            }
+        })
+
 
     }
 
