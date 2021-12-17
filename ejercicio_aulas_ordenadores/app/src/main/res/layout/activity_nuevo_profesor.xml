@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/profesores"
     tools:context=".NuevoProfesor">
 
     <EditText
@@ -25,7 +26,7 @@
         android:id="@+id/txtTfnoNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Permisos:"
+        android:text="@string/profesor_permisos"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cancelar"
-        android:text="Cancelar"
+        android:text="@string/cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.767"
@@ -52,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="aceptar"
-        android:text="Aceptar"
+        android:text="@string/aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
@@ -65,7 +66,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce un ID..."
+        android:hint="@string/introduceid"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +79,7 @@
         android:id="@+id/txtDNINuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID:"
+        android:text="@string/profesor_id"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +93,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce un nombre.."
+        android:hint="@string/introducenombre"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +107,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce la clave.."
+        android:hint="@string/introduceclave"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +120,7 @@
         android:id="@+id/txtNombreNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre:"
+        android:text="@string/profesor_nombre"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,7 +133,7 @@
         android:id="@+id/txtClaveNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clave:"
+        android:text="@string/profesor_clave"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,13 +157,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Jefe" />
+            android:text="@string/profesor_permisos_jefe" />
 
         <RadioButton
             android:id="@+id/btn_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Usuario" />
+            android:text="@string/profesor_permisos_usuario" />
     </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frame_nuevo_profesor"
+        android:layout_width="408dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

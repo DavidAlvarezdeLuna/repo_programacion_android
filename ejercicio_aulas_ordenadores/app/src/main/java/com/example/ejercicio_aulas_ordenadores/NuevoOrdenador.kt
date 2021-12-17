@@ -32,6 +32,9 @@ class NuevoOrdenador : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_ordenador)
 
+        val fragment = MiFragment()
+        replaceFragment(fragment)
+
         nuevoId = findViewById(R.id.txt_id_ordenador_nuevo)
         nuevoAula = findViewById(R.id.txt_aula_nuevo)
         nuevoModelo = findViewById(R.id.txt_modelo_nuevo)
@@ -88,6 +91,12 @@ class NuevoOrdenador : AppCompatActivity() {
         })
 
 
+    }
+
+    private fun replaceFragment(fragment: MiFragment){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_nuevo_ordenador, fragment)
+        fragmentTransaction.commit()
     }
 
     fun cancelarOrdenador(view: View){

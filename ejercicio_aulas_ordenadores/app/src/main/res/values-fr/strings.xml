@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">exercer_classes_ordinateurs</string>
+    <string name="login_titulo">GESTION DES ENSEIGNANTS, CLASSES ET ORDINATEURS</string>
+    <string name="login_usuario">Utilisateur</string>
+    <string name="login_contrasenia">Passe</string>
+    <string name="login_iniciar_sesion">Commencer la session</string>
+    <string name="login_texto_crear">No tienes cuenta? Create una ahora mismo!!</string>
+
+    <string name="gestion_lista_profes">Pret</string>
+    <string name="gestion_buscar_profe">Chercher</string>
+    <string name="gestion_borrar_profe">Effacer</string>
+
+    <string name="gestion_registrar_profe">Enregistrer</string>
+    <string name="gestion_modificar_profe">Editer</string>
+
+    <string name="gestion_profesores">Gestion Enseignants</string>
+    <string name="gestion_aulas">Gestion Classes</string>
+    <string name="gestion_ordenadores">Gestion Ordinateurs</string>
+
+    <string name="texto_fragment">Cours 2021/2022 - CIFP Inventer - Contact: 123456789</string>
+
+    <string name="volver">Revenir</string>
+    <string name="aceptar">Accepter</string>
+    <string name="cerrar_sesion">Fermer Session</string>
+    <string name="cancelar">Annuler</string>
+
+    <string name="introduceid">Entrer un ID</string>
+    <string name="introducenombre">Entrer un nom</string>
+    <string name="introduceclave">Entrer un passe</string>
+
+    <string name="profesor_id">ID:</string>
+    <string name="profesor_nombre">Nom:</string>
+    <string name="profesor_clave">Passe:</string>
+    <string name="profesor_permisos">Autorisations:</string>
+    <string name="profesor_permisos_jefe">Chef</string>
+    <string name="profesor_permisos_usuario">Utilisateur</string>
+
+
+    <string name="introduceaula">Choisir un class</string>
+    <string name="introducemodelo">Entrer un maquette</string>
+    <string name="introduceespacio">Entrer un stockage</string>
+    <string name="introduceram">Entrer ram</string>
+
+    <string name="ordenador_aula">Class:</string>
+    <string name="ordenador_modelo">Maquette:</string>
+    <string name="ordenador_espacio">Stockage:</string>
+    <string name="ordenador_ram">Ram:</string>
+
+    <string name="lista_de_aulas_disponibles">Liste de classes disponibles</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

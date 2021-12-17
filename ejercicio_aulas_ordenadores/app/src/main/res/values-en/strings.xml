@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">exercise_class_computers</string>
+    <string name="login_titulo">MANAGEMENT OF TEACHERS, CLASSES AND TEACHERS</string>
+    <string name="login_usuario">User</string>
+    <string name="login_contrasenia">Pass</string>
+    <string name="login_iniciar_sesion">Login</string>
+    <string name="login_texto_crear">No tienes cuenta? Create una ahora mismo!!</string>
+
+    <string name="gestion_lista_profes">List</string>
+    <string name="gestion_buscar_profe">Search</string>
+    <string name="gestion_borrar_profe">Delete</string>
+
+    <string name="gestion_registrar_profe">Register</string>
+    <string name="gestion_modificar_profe">Modify</string>
+
+    <string name="gestion_profesores">Manage Teachers</string>
+    <string name="gestion_aulas">Manage Classes</string>
+    <string name="gestion_ordenadores">Manage Computers</string>
+
+    <string name="texto_fragment">School year 2021/2022 - CIFP New - Contact: 123456789</string>
+
+    <string name="volver">Back</string>
+    <string name="aceptar">Accept</string>
+    <string name="cerrar_sesion">Logout</string>
+    <string name="cancelar">Cancel</string>
+
+    <string name="introduceid">Introduce ID</string>
+    <string name="introducenombre">Introduce name</string>
+    <string name="introduceclave">Introduce pass</string>
+
+    <string name="profesor_id">ID:</string>
+    <string name="profesor_nombre">Name:</string>
+    <string name="profesor_clave">Pass:</string>
+    <string name="profesor_permisos">Permits:</string>
+    <string name="profesor_permisos_jefe">Head</string>
+    <string name="profesor_permisos_usuario">User</string>
+
+
+    <string name="introduceaula">Select class</string>
+    <string name="introducemodelo">Introduce model</string>
+    <string name="introduceespacio">Introduce storage</string>
+    <string name="introduceram">Introduce ram</string>
+
+    <string name="ordenador_aula">Class:</string>
+    <string name="ordenador_modelo">Model:</string>
+    <string name="ordenador_espacio">Storage:</string>
+    <string name="ordenador_ram">Ram:</string>
+
+    <string name="lista_de_aulas_disponibles">List of available classes</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

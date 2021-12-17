@@ -33,6 +33,9 @@ class NuevoProfesor : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_profesor)
 
+        val fragment = MiFragment()
+        replaceFragment(fragment)
+
         nuevoId = findViewById(R.id.txt_id_nuevo)
         nuevoNombre = findViewById(R.id.txt_nombre_nuevo)
         nuevoClave = findViewById(R.id.txt_clave_nuevo)
@@ -48,6 +51,12 @@ class NuevoProfesor : AppCompatActivity() {
             getBuscarUnUsuario(idBuscar)
             nuevoId.isEnabled = false  //No dejamos modificar el DNI que es la clave del registro.
         }
+    }
+
+    private fun replaceFragment(fragment: MiFragment){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_nuevo_profesor, fragment)
+        fragmentTransaction.commit()
     }
 
     fun cancelar(view: View){

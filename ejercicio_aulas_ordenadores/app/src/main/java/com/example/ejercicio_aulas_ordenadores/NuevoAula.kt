@@ -29,6 +29,9 @@ class NuevoAula : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_aula)
 
+        val fragment = MiFragment()
+        replaceFragment(fragment)
+
         nuevoId = findViewById(R.id.txt_id_aula_nuevo)
         nuevoNombre = findViewById(R.id.txt_nombre_aula_nuevo)
         botonAceptar = findViewById(R.id.btnAceptarNuevo)
@@ -40,6 +43,12 @@ class NuevoAula : AppCompatActivity() {
             nuevoId.isEnabled = false  //No dejamos modificar el id_aula que es la clave del registro.
         }
 
+    }
+
+    private fun replaceFragment(fragment: MiFragment){
+        val fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_nuevo_aula, fragment)
+        fragmentTransaction.commit()
     }
 
     fun cancelarAula(view: View){

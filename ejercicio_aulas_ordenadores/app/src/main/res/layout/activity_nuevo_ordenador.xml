@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ordenadores"
     tools:context=".NuevoOrdenador">
 
     <Button
@@ -11,33 +12,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="aceptarOrdenador"
-        android:text="Aceptar"
+        android:text="@string/aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <Button
         android:id="@+id/btnCancelarNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cancelarOrdenador"
-        android:text="Cancelar"
+        android:text="@string/cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <EditText
         android:id="@+id/txt_id_ordenador_nuevo"
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce un ID..."
+        android:hint="@string/introduceid"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +51,7 @@
         android:id="@+id/txtIDAulaNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID:"
+        android:text="@string/profesor_id"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +66,7 @@
         android:layout_height="39dp"
         android:ems="10"
         android:enabled="false"
-        android:hint="Introduce un id de aula..."
+        android:hint="@string/introduceaula"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +80,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce modelo..."
+        android:hint="@string/introducemodelo"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +94,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce almacenamiento..."
+        android:hint="@string/introduceespacio"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +108,7 @@
         android:layout_width="259dp"
         android:layout_height="39dp"
         android:ems="10"
-        android:hint="Introduce ram..."
+        android:hint="@string/introduceram"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +121,7 @@
         android:id="@+id/txtNombreAulaNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aula:"
+        android:text="@string/ordenador_aula"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +134,7 @@
         android:id="@+id/txtNombreAulaNuevo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Modelo:"
+        android:text="@string/ordenador_modelo"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +147,7 @@
         android:id="@+id/txtNombreAulaNuevo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Espacio:"
+        android:text="@string/ordenador_espacio"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -159,7 +160,7 @@
         android:id="@+id/txtNombreAulaNuevo4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ram:"
+        android:text="@string/ordenador_ram"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -170,25 +171,37 @@
 
     <ListView
         android:id="@+id/lsv_aulas"
-        android:layout_width="276dp"
-        android:layout_height="151dp"
+        android:layout_width="147dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
+        app:layout_constraintVertical_bias="0.597" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="191dp"
         android:layout_height="23dp"
-        android:text="Lista de aulas disponibles"
+        android:text="@string/lista_de_aulas_disponibles"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.461" />
+
+    <FrameLayout
+        android:id="@+id/frame_nuevo_ordenador"
+        android:layout_width="398dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
