@@ -137,6 +137,13 @@ fun main(){
                         tratar = false
                     }
                 }
+
+                if(!tratar){
+                    //derivo al paciente a otra nave
+                    salaSeleccionada.listaPacientes.remove(pacienteTratar?.nidi)
+                    println(momento+": "+pacienteTratar.toString()+" ha sido derivado a otra nave hospital para realizar su tratamiento")
+                    Fichero.escribirLinea(momento+": "+pacienteTratar.toString()+" ha sido dervado a otra nave hospital para realizar su tratamiento")
+                }
             }
         }
 

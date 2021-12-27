@@ -30,7 +30,7 @@ class Paciente (override var nidi:Int, override var nombre:String, var seguro:St
     }
 
     override fun toString(): String{
-        return this.javaClass.name+" "+this.nidi+", "+this.nombre
+        return this.javaClass.name+" "+this.nidi+", "+this.nombre+" (seguro "+this.seguro+", prioridad "+this.prioridad+")"
     }
 
 }
