@@ -3,7 +3,6 @@ import kotlin.random.Random
 object Nave {
 
     var listaSalas:ArrayList<SalaEspera> = ArrayList()
-    var claves = 0
 
     override fun toString(): String{
         return "La nave médica Nebulón-B Frigate"
@@ -20,8 +19,10 @@ object Nave {
                 if(sala.listaPacientes.size < llenadaMinima){
                     listaSalasMasVacias.clear()
                     listaSalasMasVacias.add(sala)
+                    llenadaMinima = sala.listaPacientes.size
                 }else{
                     if(sala.listaPacientes.size == llenadaMinima){
+                        llenadaMinima = sala.listaPacientes.size
                         listaSalasMasVacias.add(sala)
                     }
                 }
@@ -31,14 +32,12 @@ object Nave {
         var numSalaSeleccionada = -1
 
         if(listaSalasMasVacias.size == 1){
-            listaSalasMasVacias[0].listaPacientes.put(claves,p)
-            claves++
+            listaSalasMasVacias[0].listaPacientes.put(p.nidi,p)
             numSalaSeleccionada = listaSalasMasVacias[0].numero
         }else{
             if(listaSalasMasVacias.size > 1){
                 var azarSala = Random.nextInt(0,listaSalasMasVacias.size)
-                listaSalasMasVacias[azarSala].listaPacientes.put(claves,p)
-                claves++
+                listaSalasMasVacias[azarSala].listaPacientes.put(p.nidi,p)
                 numSalaSeleccionada = listaSalasMasVacias[azarSala].numero
             }
         }
@@ -58,11 +57,16 @@ object Nave {
         var listaSalasMasLlenas: ArrayList<SalaEspera> = ArrayList()
         for(sala in listaSalas){
 
+            println("SALA NUMERO "+sala.numero+" SIZE "+sala.listaPacientes.size)
+
             if(sala.listaPacientes.size > llenadaMaxima){
+                llenadaMaxima = sala.listaPacientes.size
                 listaSalasMasLlenas.clear()
                 listaSalasMasLlenas.add(sala)
+
             }else{
                 if(sala.listaPacientes.size == llenadaMaxima){
+                    llenadaMaxima = sala.listaPacientes.size
                     listaSalasMasLlenas.add(sala)
                 }
             }
@@ -70,8 +74,10 @@ object Nave {
 
         var salaDevuelta:SalaEspera = listaSalas[0]
         if(listaSalasMasLlenas.size == 1){
+            println("SALA MAS LLENA: "+listaSalasMasLlenas)
             salaDevuelta = listaSalasMasLlenas[0]
         }else{
+            println("SALAS MAS LLENAS: "+listaSalasMasLlenas)
             var azarSala = Random.nextInt(0,listaSalasMasLlenas.size)
             salaDevuelta = listaSalasMasLlenas[azarSala]
         }

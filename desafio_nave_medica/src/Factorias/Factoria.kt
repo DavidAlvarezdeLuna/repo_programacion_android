@@ -23,7 +23,7 @@ object Factoria {
         var azarSeguro:String = listaSeguros[Random.nextInt(0, listaSeguros.size)]
         var azarHerida:String = listaHeridas[Random.nextInt(0, listaHeridas.size)]
 
-        var p:Paciente = Paciente.Builder(nidiPersona,azarNombre,azarSeguro,azarHerida,Random.nextInt(0,3)).build()
+        var p:Paciente = Paciente.Builder(nidiPersona,azarNombre,azarSeguro,azarHerida,Random.nextInt(1,4)).build()
         nidiPersona++
         return p
     }
