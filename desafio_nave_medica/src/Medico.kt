@@ -31,7 +31,7 @@ open class Medico(override var nidi:Int, override var nombre:String, open var oc
         if(this.ocupado){
             estado = "Ocupado"
         }
-        return this.javaClass.name+" "+this.nidi+", "+this.nombre+": "+estado
+        return this.javaClass.name+" "+this.nidi+", "+this.nombre//+": "+estado
     }
 
 }

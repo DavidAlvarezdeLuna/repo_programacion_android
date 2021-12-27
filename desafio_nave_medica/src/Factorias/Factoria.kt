@@ -24,8 +24,8 @@ object Factoria {
         var azarHerida:String = listaHeridas[Random.nextInt(0, listaHeridas.size)]
 
         var p:Paciente = Paciente.Builder(nidiPersona,azarNombre,azarSeguro,azarHerida,Random.nextInt(0,3)).build()
-        return p
         nidiPersona++
+        return p
     }
 
     fun generarTraumatologo():Traumatologo{
@@ -44,8 +44,8 @@ object Factoria {
         segurosMedico.add(listaSeguros[azar2])
 
         var t:Traumatologo = Traumatologo.Builder(nidiPersona,azarNombre,false,segurosMedico).build()
-        return t
         nidiPersona++
+        return t
     }
 
     fun generarInternista():Internista{
@@ -64,8 +64,8 @@ object Factoria {
         segurosMedico.add(listaSeguros[azar2])
 
         var i:Internista = Internista.Builder(nidiPersona,azarNombre,false,segurosMedico).build()
-        return i
         nidiPersona++
+        return i
     }
 
     fun generarSala(numero:Int):SalaEspera{
