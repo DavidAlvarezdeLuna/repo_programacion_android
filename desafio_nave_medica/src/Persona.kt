@@ -1,7 +1,11 @@
 
-open class Persona(open var nidi:Int, open var nombre:String) {
+abstract class Persona(var nidi:Int, var nombre:String) {
 
-    class Builder(var nidi:Int, var nombre:String){
+    companion object{
+        var nidi = 0
+    }
+
+    /*class Builder(var nidi:Int, var nombre:String){
         fun nidi(nidi:Int):Builder{
             this.nidi = nidi
             return this
@@ -13,6 +17,6 @@ open class Persona(open var nidi:Int, open var nombre:String) {
         fun build():Persona{
             return Persona(nidi,nombre)
         }
-    }
+    }*/
 
 }

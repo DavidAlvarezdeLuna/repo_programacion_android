@@ -1,7 +1,7 @@
 
-class Paciente (override var nidi:Int, override var nombre:String, var seguro:String, var herida:String, var prioridad:Int):Persona(nidi,nombre){
+class Paciente (nidi:Int, nombre:String, var seguro:String, var herida:String, var prioridad:Int):Persona(nidi,nombre){
 
-    open class Builder(var nidi:Int, var nombre:String, var seguro:String, var herida:String, var prioridad:Int){
+    class Builder(var nidi:Int, var nombre:String, var seguro:String, var herida:String, var prioridad:Int){
 
         /*fun nidi(nidi:Int):Builder{
             this.nidi = nidi
@@ -27,6 +27,18 @@ class Paciente (override var nidi:Int, override var nombre:String, var seguro:St
             return Paciente(nidi,nombre,seguro,herida,prioridad)
         }
 
+    }
+
+    fun obtenerTipoMedico():String{
+        var medicoNecesitado:String = ""
+        if(this.herida.equals("quemadura")){
+            medicoNecesitado = "Traumatologo"
+        }else{
+            if(this.herida.equals("impacto")){
+                medicoNecesitado = "Internista"
+            }
+        }
+        return medicoNecesitado
     }
 
     override fun toString(): String{

@@ -1,8 +1,8 @@
 import kotlin.collections.ArrayList
 
-class Traumatologo(override var nidi:Int, override var nombre:String, override var ocupado:Boolean, override var listaSeguros:ArrayList<String>):Medico(nidi,nombre,ocupado,listaSeguros) {
+class Traumatologo(nidi:Int, nombre:String, ocupado:Boolean, listaSeguros:ArrayList<String>):Medico(nidi,nombre,ocupado,listaSeguros) {
 
-    open class Builder(var nidi:Int, var nombre:String, var ocupado:Boolean, var listaSeguros:ArrayList<String>){
+    class Builder(var nidi:Int, var nombre:String, var ocupado:Boolean, var listaSeguros:ArrayList<String>){
 
         /*fun nidi(nidi:Int):Builder{
             this.nidi = nidi

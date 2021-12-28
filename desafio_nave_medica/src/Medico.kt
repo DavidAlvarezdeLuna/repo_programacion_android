@@ -1,17 +1,17 @@
 import kotlin.collections.ArrayList
 
-open class Medico(override var nidi:Int, override var nombre:String, open var ocupado:Boolean, open var listaSeguros:ArrayList<String>):Persona(nidi,nombre) {
+abstract class Medico(nidi:Int, nombre:String, open var ocupado:Boolean, open var listaSeguros:ArrayList<String>):Persona(nidi,nombre) {
 
-    open class Builder(var nidi:Int, var nombre:String, var ocupado:Boolean, var listaSeguros:ArrayList<String>){
+    /*open class Builder(var nidi:Int, var nombre:String, var ocupado:Boolean, var listaSeguros:ArrayList<String>){
 
-        /*fun nidi(nidi:Int):Builder{
+        fun nidi(nidi:Int):Builder{
             this.nidi = nidi
             return this
         }
         fun nombre(nombre:String):Builder{
             this.nombre = nombre
             return this
-        }*/
+        }
         fun ocupado(ocupado:Boolean):Builder{
             this.ocupado = ocupado
             return this
@@ -24,7 +24,7 @@ open class Medico(override var nidi:Int, override var nombre:String, open var oc
             return Medico(nidi,nombre,ocupado,listaSeguros)
         }
 
-    }
+    }*/
 
     override fun toString(): String{
         var estado:String = "Disponible"

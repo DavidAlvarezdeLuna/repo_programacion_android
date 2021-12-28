@@ -59,40 +59,11 @@ fun main(){
                 Fichero.escribirLinea(momento+": "+"Actualmente no hay pacientes a tratar!")
             }else{
                 //saco el paciente y procedo a comprobar si algun médico puede atender al paciente
-
-                var listaPosiblesPrioridad:ArrayList<Paciente> = ArrayList()
-                for(paci in salaSeleccionada.listaPacientes.values){
-                    if(paci.prioridad==1){
-                        listaPosiblesPrioridad.add(paci)
-                    }
-                }
-
-                if(listaPosiblesPrioridad.isEmpty()){
-                    for(paci in salaSeleccionada.listaPacientes.values){
-                        if(paci.prioridad==2){
-                            listaPosiblesPrioridad.add(paci)
-                        }
-                    }
-                }
-
-                if(listaPosiblesPrioridad.isEmpty()){
-                    for(paci in salaSeleccionada.listaPacientes.values){
-                        if(paci.prioridad==3){
-                            listaPosiblesPrioridad.add(paci)
-                        }
-                    }
-                }
-
-                var pacienteTratar:Paciente? = listaPosiblesPrioridad[Random.nextInt(0,listaPosiblesPrioridad.size)]
+                var pacienteTratar = salaSeleccionada.obtenerPaciente()
                 println(pacienteTratar.toString())
-                var medicoNecesitado:String = ""
-                if(pacienteTratar?.herida.equals("quemadura")){
-                    medicoNecesitado = "Traumatologo"
-                }else{
-                    if(pacienteTratar?.herida.equals("impacto")){
-                        medicoNecesitado = "Internista"
-                    }
-                }
+
+                //saco el tipo de medico que necesita el paciente
+                var medicoNecesitado:String = pacienteTratar!!.obtenerTipoMedico()
 
                 var tratar = false
                 for(med in listaMedicos){
@@ -103,7 +74,7 @@ fun main(){
                                 if (tratadoInterTurno < Constantes.MED_ESP_TURNO){
                                     println("constante ok")
                                     for(segu in med.listaSeguros) {
-                                        if (segu == pacienteTratar?.seguro) {
+                                        if (segu == pacienteTratar.seguro) {
                                             println("seguro ok")
                                             tratar = true
                                             tratadoInterTurno++
@@ -129,18 +100,18 @@ fun main(){
                     }
 
                     if(tratar){
-                        println("SEGUROS "+pacienteTratar?.seguro+" y "+med.listaSeguros)
-                        println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar?.herida)
+                        println("SEGUROS "+pacienteTratar.seguro+" y "+med.listaSeguros)
+                        println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.herida)
                         Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar?.herida)
                         med.ocupado = true
-                        salaSeleccionada.listaPacientes.remove(pacienteTratar?.nidi)
+                        salaSeleccionada.listaPacientes.remove(pacienteTratar.nidi)
                         tratar = false
                     }
                 }
 
                 if(!tratar){
                     //derivo al paciente a otra nave
-                    salaSeleccionada.listaPacientes.remove(pacienteTratar?.nidi)
+                    salaSeleccionada.listaPacientes.remove(pacienteTratar.nidi)
                     println(momento+": "+pacienteTratar.toString()+" ha sido derivado a otra nave hospital para realizar su tratamiento")
                     Fichero.escribirLinea(momento+": "+pacienteTratar.toString()+" ha sido dervado a otra nave hospital para realizar su tratamiento")
                 }
