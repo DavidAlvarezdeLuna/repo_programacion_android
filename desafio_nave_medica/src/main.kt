@@ -22,8 +22,7 @@ fun main(){
 
     //COMIENZA LA SIMULACIÓN
     var segundo:Int = 0
-    var tratadoInterTurno:Int = 0
-    var tratadoTraumaTurno:Int = 0
+    Nave.obtenerMedicosGuardia()
 
     var dia:String = listaDias[segundo/Constantes.DURACION_DIA]
     var turno:String = listaTurnos[(segundo%Constantes.DURACION_DIA)/Constantes.DURACION_TURNO]
@@ -33,6 +32,13 @@ fun main(){
     Fichero.escribirLinea("SIMULACIÓN DE FUNCIONAMIENTO DE LA NAVE NEBULÓN-B FRIGATE")
     println(momento.uppercase())
     Fichero.escribirLinea(momento.uppercase())
+    println("MÉDICOS DE GUARDIA: ")
+    Fichero.escribirLinea("MÉDICOS DE GUARDIA: ")
+
+    for(med in Nave.listaGuardia){
+        println(med.toString())
+        Fichero.escribirLinea(med.toString())
+    }
 
     do{
         if(segundo%2 == 0){ //cada dos segundos
@@ -44,8 +50,8 @@ fun main(){
             var salaSel = Nave.comprobarSalaMasVacia()
             salaSel.ingresarPaciente(p)
 
-            println(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.mostrarHerida()+" y ha sido colocado en la sala "+salaSel.numero)
-            Fichero.escribirLinea(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.mostrarHerida()+" y ha sido colocado en la sala "+salaSel.numero)
+            println(momento+": "+p.toString() + " ha llegado a la nave médica y ha sido colocado en la sala "+salaSel.numero)
+            Fichero.escribirLinea(momento+": "+p.toString() + " ha llegado a la nave médica y ha sido colocado en la sala "+salaSel.numero)
         }
 
         if(segundo%4 == 0){ //cada cuatro segundos
@@ -61,31 +67,29 @@ fun main(){
                 //saco el tipo de medico que necesita el paciente
                 var medicoNecesitado:String = pacienteTratar!!.obtenerTipoMedico()
 
-                var tratar = false
-                for(med in Nave.listaMedicos){
-                    if(!tratar){ //si ya se ha tratado al paciente acaba el for. Si no, compruebo si el siguiente medico puede tratar al paciente
-                        tratar=med.puedeTratar(pacienteTratar,medicoNecesitado,tratadoInterTurno,tratadoTraumaTurno)
-
-                        if(tratar){ //el medico trata al paciente
-                            println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.mostrarHerida())
-                            Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.mostrarHerida())
-                            med.estaOcupado()
-                            salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
-                            if(med is Internista){
-                                tratadoInterTurno++
-                            }else{
-                                if(med is Traumatologo){
-                                    tratadoTraumaTurno++
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if(!tratar){ //si ningun medico ha podido tratar al paciente, se deriva a otra nave médica
+                if(medicoNecesitado == "Otro"){ //he considerado que la herida "otros" necesita a un tipo de especialista que no hay en la nave en este momento, por lo tanto hay que derivarlo
                     salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
                     println(momento+": "+pacienteTratar.toString()+" ha sido derivado a otra nave hospital para realizar su tratamiento")
                     Fichero.escribirLinea(momento+": "+pacienteTratar.toString()+" ha sido dervado a otra nave hospital para realizar su tratamiento")
+                }else{
+                    var tratar = false
+                    for(med in Nave.listaGuardia){
+                        if(!tratar){ //si ya se ha tratado al paciente acaba el for. Si no, compruebo si el siguiente medico puede tratar al paciente
+                            tratar=med.puedeTratar(pacienteTratar,medicoNecesitado)
+
+                            if(tratar){ //el medico trata al paciente
+                                println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString())
+                                Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString())
+                                salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
+                            }
+                        }
+                    }
+
+                    if(!tratar){ //si ningun medico ha podido tratar al paciente, se deriva a otra nave médica
+                        salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
+                        println(momento+": "+pacienteTratar.toString()+" ha sido derivado a otra nave hospital para realizar su tratamiento")
+                        Fichero.escribirLinea(momento+": "+pacienteTratar.toString()+" ha sido dervado a otra nave hospital para realizar su tratamiento")
+                    }
                 }
             }
         }
@@ -104,17 +108,17 @@ fun main(){
                 Fichero.escribirLinea(" ")
                 println("CAMBIO DE TURNO: "+momento.uppercase())
                 Fichero.escribirLinea("CAMBIO DE TURNO: "+momento.uppercase())
+
+                //En cada turno se seleccionan los médicos de guardia
+                Nave.obtenerMedicosGuardia()
+                println("MÉDICOS DE GUARDIA: ")
+                Fichero.escribirLinea("MÉDICOS DE GUARDIA: ")
+
+                for(med in Nave.listaGuardia){
+                    println(med.toString())
+                    Fichero.escribirLinea(med.toString())
+                }
             }
-
-            tratadoInterTurno = 0
-            tratadoTraumaTurno = 0
-
-            for(med in Nave.listaMedicos){
-                med.estaLibre()
-            }
-
-            //En cada turno distribuyo a los médicos al azar
-            Nave.distribuirMedicos()
         }
 
     }while (segundo < Constantes.DURACION_DIA*Constantes.DIAS)

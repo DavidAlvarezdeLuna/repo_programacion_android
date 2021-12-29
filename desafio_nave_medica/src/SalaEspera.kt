@@ -1,5 +1,4 @@
 import kotlin.collections.HashMap
-import kotlin.random.Random
 
 class SalaEspera(val numero:Int? = null, val listaPacientes:HashMap<Int,Paciente>? = null) {
 
@@ -20,22 +19,22 @@ class SalaEspera(val numero:Int? = null, val listaPacientes:HashMap<Int,Paciente
     fun obtenerPaciente():Paciente?{ //saco el primer paciente de los mas prioritarios de una sala
         var pacienteTratar:Paciente? = null
         for(paci in this.listaPacientes!!.values){
-            if(paci.prioridad==1){
+            if(paci.prioridad==1 && pacienteTratar == null){
                 pacienteTratar = paci
             }
         }
 
         if(pacienteTratar == null){
-            for(paci in this.listaPacientes.values){
-                if(paci.prioridad==2){
+            for(paci in this.listaPacientes!!.values){
+                if(paci.prioridad==2 && pacienteTratar == null){
                     pacienteTratar = paci
                 }
             }
         }
 
         if(pacienteTratar == null){
-            for(paci in this.listaPacientes.values){
-                if(paci.prioridad==3){
+            for(paci in this.listaPacientes!!.values){
+                if(paci.prioridad==3 && pacienteTratar == null){
                     pacienteTratar = paci
                 }
             }

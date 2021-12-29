@@ -43,7 +43,7 @@ object Factoria {
         segurosMedico.add(listaSeguros[azar2])
 
         //var t:Traumatologo = Traumatologo.Builder(Persona.nidi,azarNombre,false,segurosMedico).build()
-        var t:Traumatologo = Traumatologo.Builder().nidi(Persona.nidi).nombre(azarNombre).ocupado(false).listaSeguros(segurosMedico).build()
+        var t:Traumatologo = Traumatologo.Builder().nidi(Persona.nidi).nombre(azarNombre).listaSeguros(segurosMedico).build()
         Persona.nidi++
         return t
     }
@@ -64,7 +64,7 @@ object Factoria {
         segurosMedico.add(listaSeguros[azar2])
 
         //var i:Internista = Internista.Builder(Persona.nidi,azarNombre,false,segurosMedico).build()
-        var i:Internista = Internista.Builder().nidi(Persona.nidi).nombre(azarNombre).ocupado(false).listaSeguros(segurosMedico).build()
+        var i:Internista = Internista.Builder().nidi(Persona.nidi).nombre(azarNombre).listaSeguros(segurosMedico).build()
         Persona.nidi++
         return i
     }

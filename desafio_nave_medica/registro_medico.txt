@@ -1,202 +1,265 @@
 SIMULACIÓN DE FUNCIONAMIENTO DE LA NAVE NEBULÓN-B FRIGATE
 LUNES, PRIMER TURNO
-Lunes, Primer turno: Paciente 12, Wenceslao (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Lunes, Primer turno: Traumatologo 0, Lola, seguros [Vaderslas, Sanitroopers] trata al Paciente 12, Wenceslao (seguro Vaderslas, prioridad 3) de su herida causada por quemadura
-Lunes, Primer turno: Paciente 13, Laura (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Lunes, Primer turno: Paciente 14, Estrella (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Lunes, Primer turno: Paciente 13, Laura (seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Lunes, Primer turno: Paciente 15, Veronica (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Lunes, Primer turno: Paciente 16, Bruno (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Lunes, Primer turno: Internista 1, Bruno, seguros [Sanitroopers, Yodacare] trata al Paciente 15, Veronica (seguro Yodacare, prioridad 3) de su herida causada por impacto
+MÉDICOS DE GUARDIA: 
+Internista 9, Laura, seguros [Vaderslas, Sanitroopers]
+Traumatologo 8, Paula, seguros [Sanitroopers, Vaderslas]
+Lunes, Primer turno: Paciente 12, Pedro (herida otros, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Primer turno: Paciente 12, Pedro (herida otros, seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Lunes, Primer turno: Paciente 13, Juan (herida quemadura, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Lunes, Primer turno: Paciente 14, Pedro (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Primer turno: Traumatologo 8, Paula, seguros [Sanitroopers, Vaderslas] trata al Paciente 14, Pedro (herida quemadura, seguro Sanitroopers, prioridad 3)
+Lunes, Primer turno: Paciente 15, Juan (herida impacto, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Primer turno: Paciente 16, Marta (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Lunes, Primer turno: Internista 9, Laura, seguros [Vaderslas, Sanitroopers] trata al Paciente 15, Juan (herida impacto, seguro Sanitroopers, prioridad 1)
  
 CAMBIO DE TURNO: LUNES, SEGUNDO TURNO
-Lunes, Segundo turno: Paciente 17, Bruno (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Lunes, Segundo turno: Paciente 18, Ana (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Lunes, Segundo turno: Internista 1, Bruno, seguros [Sanitroopers, Yodacare] trata al Paciente 18, Ana (seguro Sanitroopers, prioridad 2) de su herida causada por impacto
-Lunes, Segundo turno: Paciente 19, Alfonso (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Lunes, Segundo turno: Paciente 20, Pedro (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Lunes, Segundo turno: Traumatologo 4, Bruno, seguros [Sanitroopers, Vaderslas] trata al Paciente 14, Estrella (seguro Sanitroopers, prioridad 2) de su herida causada por quemadura
-Lunes, Segundo turno: Paciente 21, Alfonso (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
+MÉDICOS DE GUARDIA: 
+Internista 3, Alfonso, seguros [Sanitroopers, Vaderslas]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Lunes, Segundo turno: Paciente 17, Ernesto (herida impacto, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Segundo turno: Paciente 18, Pepe (herida quemadura, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Lunes, Segundo turno: Paciente 16, Marta (herida impacto, seguro Yodacare, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Lunes, Segundo turno: Paciente 19, Marta (herida otros, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Lunes, Segundo turno: Paciente 20, Juan (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Segundo turno: Paciente 19, Marta (herida otros, seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Lunes, Segundo turno: Paciente 21, Marta (herida otros, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
  
 CAMBIO DE TURNO: LUNES, TERCER TURNO
-Lunes, Tercer turno: Paciente 22, Marta (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Lunes, Tercer turno: Traumatologo 10, Miguel, seguros [Yodacare, Sanitroopers] trata al Paciente 21, Alfonso (seguro Sanitroopers, prioridad 2) de su herida causada por quemadura
-Lunes, Tercer turno: Paciente 23, Eugenio (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Lunes, Tercer turno: Paciente 24, Eugenio (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Lunes, Tercer turno: Paciente 24, Eugenio (seguro Sanitroopers, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
-Lunes, Tercer turno: Paciente 25, Wenceslao (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Lunes, Tercer turno: Paciente 26, Ernesto (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Lunes, Tercer turno: Internista 9, Juana, seguros [Vaderslas, Yodacare] trata al Paciente 25, Wenceslao (seguro Vaderslas, prioridad 1) de su herida causada por impacto
+MÉDICOS DE GUARDIA: 
+Internista 5, Wenceslao, seguros [Yodacare, Vaderslas]
+Traumatologo 2, Marta, seguros [Sanitroopers, Yodacare]
+Lunes, Tercer turno: Paciente 22, Wenceslao (herida quemadura, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Lunes, Tercer turno: Traumatologo 2, Marta, seguros [Sanitroopers, Yodacare] trata al Paciente 22, Wenceslao (herida quemadura, seguro Sanitroopers, prioridad 1)
+Lunes, Tercer turno: Paciente 23, Juan (herida quemadura, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Lunes, Tercer turno: Paciente 24, Pepe (herida quemadura, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Tercer turno: Paciente 17, Ernesto (herida impacto, seguro Sanitroopers, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Lunes, Tercer turno: Paciente 25, Jesus (herida otros, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Lunes, Tercer turno: Paciente 26, Pedro (herida impacto, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Lunes, Tercer turno: Paciente 25, Jesus (herida otros, seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
  
 CAMBIO DE TURNO: MARTES, PRIMER TURNO
-Martes, Primer turno: Paciente 27, Alfonso (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Martes, Primer turno: Paciente 28, Miguel (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Martes, Primer turno: Internista 11, Pedro, seguros [Vaderslas, Yodacare] trata al Paciente 27, Alfonso (seguro Vaderslas, prioridad 1) de su herida causada por impacto
-Martes, Primer turno: Paciente 29, Veronica (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Martes, Primer turno: Paciente 30, Juana (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Martes, Primer turno: Traumatologo 8, Sara, seguros [Yodacare, Vaderslas] trata al Paciente 23, Eugenio (seguro Vaderslas, prioridad 2) de su herida causada por quemadura
-Martes, Primer turno: Paciente 31, Marta (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
+MÉDICOS DE GUARDIA: 
+Internista 5, Wenceslao, seguros [Yodacare, Vaderslas]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Martes, Primer turno: Paciente 27, Jesus (herida impacto, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Martes, Primer turno: Paciente 28, Alfonso (herida otros, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Martes, Primer turno: Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers] trata al Paciente 23, Juan (herida quemadura, seguro Sanitroopers, prioridad 2)
+Martes, Primer turno: Paciente 29, Lola (herida otros, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Martes, Primer turno: Paciente 30, Bruno (herida quemadura, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Martes, Primer turno: Paciente 29, Lola (herida otros, seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Martes, Primer turno: Paciente 31, Wenceslao (herida impacto, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 2
  
 CAMBIO DE TURNO: MARTES, SEGUNDO TURNO
-Martes, Segundo turno: Paciente 32, Paula (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Martes, Segundo turno: Traumatologo 8, Sara, seguros [Yodacare, Vaderslas] trata al Paciente 28, Miguel (seguro Yodacare, prioridad 1) de su herida causada por quemadura
-Martes, Segundo turno: Paciente 33, Juana (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Martes, Segundo turno: Paciente 34, Veronica (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Martes, Segundo turno: Internista 11, Pedro, seguros [Vaderslas, Yodacare] trata al Paciente 19, Alfonso (seguro Yodacare, prioridad 1) de su herida causada por impacto
-Martes, Segundo turno: Paciente 35, Paula (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Martes, Segundo turno: Paciente 36, Paula (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Martes, Segundo turno: Paciente 31, Marta (seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+MÉDICOS DE GUARDIA: 
+Internista 11, Ernesto, seguros [Yodacare, Vaderslas]
+Traumatologo 4, Ernesto, seguros [Yodacare, Vaderslas]
+Martes, Segundo turno: Paciente 32, Lola (herida otros, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Martes, Segundo turno: Paciente 32, Lola (herida otros, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Martes, Segundo turno: Paciente 33, Paula (herida otros, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Martes, Segundo turno: Paciente 34, Ernesto (herida impacto, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Martes, Segundo turno: Paciente 21, Marta (herida otros, seguro Yodacare, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Martes, Segundo turno: Paciente 35, Miguel (herida quemadura, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Martes, Segundo turno: Paciente 36, Juana (herida quemadura, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Martes, Segundo turno: Paciente 33, Paula (herida otros, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
  
 CAMBIO DE TURNO: MARTES, TERCER TURNO
-Martes, Tercer turno: Paciente 37, Eugenio (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Martes, Tercer turno: Paciente 38, Bruno (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Martes, Tercer turno: Traumatologo 8, Sara, seguros [Yodacare, Vaderslas] trata al Paciente 36, Paula (seguro Vaderslas, prioridad 1) de su herida causada por quemadura
-Martes, Tercer turno: Paciente 39, Estrella (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Martes, Tercer turno: Paciente 40, Pedro (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Martes, Tercer turno: Internista 1, Bruno, seguros [Sanitroopers, Yodacare] trata al Paciente 40, Pedro (seguro Sanitroopers, prioridad 2) de su herida causada por impacto
-Martes, Tercer turno: Paciente 41, Eugenio (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
+MÉDICOS DE GUARDIA: 
+Internista 1, Juana, seguros [Vaderslas, Sanitroopers]
+Traumatologo 8, Paula, seguros [Sanitroopers, Vaderslas]
+Martes, Tercer turno: Paciente 37, Ana (herida quemadura, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Martes, Tercer turno: Paciente 38, Juan (herida otros, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Martes, Tercer turno: Paciente 35, Miguel (herida quemadura, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Martes, Tercer turno: Paciente 39, Marta (herida otros, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Martes, Tercer turno: Paciente 40, Marta (herida otros, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Martes, Tercer turno: Internista 1, Juana, seguros [Vaderslas, Sanitroopers] trata al Paciente 34, Ernesto (herida impacto, seguro Sanitroopers, prioridad 1)
+Martes, Tercer turno: Paciente 41, Jesus (herida impacto, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
  
 CAMBIO DE TURNO: MIERCOLES, PRIMER TURNO
-Miercoles, Primer turno: Paciente 42, Wenceslao (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Miercoles, Primer turno: Traumatologo 0, Lola, seguros [Vaderslas, Sanitroopers] trata al Paciente 33, Juana (seguro Vaderslas, prioridad 1) de su herida causada por quemadura
-Miercoles, Primer turno: Paciente 43, Eugenio (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Miercoles, Primer turno: Paciente 44, Bruno (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Miercoles, Primer turno: Paciente 41, Eugenio (seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Miercoles, Primer turno: Paciente 45, Wenceslao (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Miercoles, Primer turno: Paciente 46, Estrella (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Miercoles, Primer turno: Paciente 45, Wenceslao (seguro Vaderslas, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+MÉDICOS DE GUARDIA: 
+Internista 7, Marta, seguros [Yodacare, Sanitroopers]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Miercoles, Primer turno: Paciente 42, Wenceslao (herida otros, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Miercoles, Primer turno: Paciente 26, Pedro (herida impacto, seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Miercoles, Primer turno: Paciente 43, Miguel (herida quemadura, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Miercoles, Primer turno: Paciente 44, Paula (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Miercoles, Primer turno: Paciente 42, Wenceslao (herida otros, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Miercoles, Primer turno: Paciente 45, Sara (herida impacto, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Miercoles, Primer turno: Paciente 46, Ana (herida quemadura, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Miercoles, Primer turno: Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers] trata al Paciente 37, Ana (herida quemadura, seguro Sanitroopers, prioridad 1)
  
 CAMBIO DE TURNO: MIERCOLES, SEGUNDO TURNO
-Miercoles, Segundo turno: Paciente 47, Lola (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Miercoles, Segundo turno: Paciente 48, Pepa (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Miercoles, Segundo turno: Internista 3, Juana, seguros [Vaderslas, Yodacare] trata al Paciente 34, Veronica (seguro Yodacare, prioridad 1) de su herida causada por impacto
-Miercoles, Segundo turno: Paciente 49, Laura (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Miercoles, Segundo turno: Paciente 50, Juana (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Miercoles, Segundo turno: Traumatologo 6, Jesus, seguros [Vaderslas, Sanitroopers] trata al Paciente 50, Juana (seguro Vaderslas, prioridad 1) de su herida causada por quemadura
-Miercoles, Segundo turno: Paciente 51, Veronica (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
+MÉDICOS DE GUARDIA: 
+Internista 9, Laura, seguros [Vaderslas, Sanitroopers]
+Traumatologo 4, Ernesto, seguros [Yodacare, Vaderslas]
+Miercoles, Segundo turno: Paciente 47, Juan (herida quemadura, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Miercoles, Segundo turno: Paciente 48, Marta (herida otros, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Miercoles, Segundo turno: Traumatologo 4, Ernesto, seguros [Yodacare, Vaderslas] trata al Paciente 47, Juan (herida quemadura, seguro Yodacare, prioridad 1)
+Miercoles, Segundo turno: Paciente 49, Estrella (herida impacto, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Miercoles, Segundo turno: Paciente 50, Ernesto (herida impacto, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Miercoles, Segundo turno: Paciente 39, Marta (herida otros, seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Miercoles, Segundo turno: Paciente 51, Paula (herida impacto, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
  
 CAMBIO DE TURNO: MIERCOLES, TERCER TURNO
-Miercoles, Tercer turno: Paciente 52, Bruno (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Miercoles, Tercer turno: Traumatologo 6, Jesus, seguros [Vaderslas, Sanitroopers] trata al Paciente 43, Eugenio (seguro Sanitroopers, prioridad 2) de su herida causada por quemadura
-Miercoles, Tercer turno: Paciente 53, Lola (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Miercoles, Tercer turno: Paciente 54, Estrella (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Miercoles, Tercer turno: Paciente 47, Lola (seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Miercoles, Tercer turno: Paciente 55, Jesus (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Miercoles, Tercer turno: Paciente 56, Pepa (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Miercoles, Tercer turno: Internista 7, Alfonso, seguros [Sanitroopers, Yodacare] trata al Paciente 37, Eugenio (seguro Sanitroopers, prioridad 2) de su herida causada por impacto
+MÉDICOS DE GUARDIA: 
+Internista 5, Wenceslao, seguros [Yodacare, Vaderslas]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Miercoles, Tercer turno: Paciente 52, Pepa (herida impacto, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Miercoles, Tercer turno: Paciente 51, Paula (herida impacto, seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Miercoles, Tercer turno: Paciente 53, Pedro (herida otros, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Miercoles, Tercer turno: Paciente 54, Laura (herida otros, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Miercoles, Tercer turno: Paciente 48, Marta (herida otros, seguro Yodacare, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Miercoles, Tercer turno: Paciente 55, Pepe (herida quemadura, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 2
+Miercoles, Tercer turno: Paciente 56, Sara (herida impacto, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Miercoles, Tercer turno: Paciente 46, Ana (herida quemadura, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
  
 CAMBIO DE TURNO: JUEVES, PRIMER TURNO
-Jueves, Primer turno: Paciente 57, Laura (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Jueves, Primer turno: Paciente 58, Alfonso (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Jueves, Primer turno: Traumatologo 8, Sara, seguros [Yodacare, Vaderslas] trata al Paciente 56, Pepa (seguro Yodacare, prioridad 1) de su herida causada por quemadura
-Jueves, Primer turno: Paciente 59, Veronica (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Jueves, Primer turno: Paciente 60, Pepe (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Jueves, Primer turno: Paciente 60, Pepe (seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Jueves, Primer turno: Paciente 61, Ernesto (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
+MÉDICOS DE GUARDIA: 
+Internista 9, Laura, seguros [Vaderslas, Sanitroopers]
+Traumatologo 8, Paula, seguros [Sanitroopers, Vaderslas]
+Jueves, Primer turno: Paciente 57, Alfonso (herida otros, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Jueves, Primer turno: Paciente 58, Lola (herida otros, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Jueves, Primer turno: Paciente 54, Laura (herida otros, seguro Vaderslas, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Jueves, Primer turno: Paciente 59, Juana (herida impacto, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Jueves, Primer turno: Paciente 60, Juan (herida quemadura, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Jueves, Primer turno: Paciente 57, Alfonso (herida otros, seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Jueves, Primer turno: Paciente 61, Laura (herida impacto, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
  
 CAMBIO DE TURNO: JUEVES, SEGUNDO TURNO
-Jueves, Segundo turno: Paciente 62, Miguel (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Jueves, Segundo turno: Internista 11, Pedro, seguros [Vaderslas, Yodacare] trata al Paciente 62, Miguel (seguro Vaderslas, prioridad 2) de su herida causada por impacto
-Jueves, Segundo turno: Paciente 63, Alfonso (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Jueves, Segundo turno: Paciente 64, Ana (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Jueves, Segundo turno: Paciente 51, Veronica (seguro Vaderslas, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
-Jueves, Segundo turno: Paciente 65, Juan (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Jueves, Segundo turno: Paciente 66, Estrella (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Jueves, Segundo turno: Paciente 59, Veronica (seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+MÉDICOS DE GUARDIA: 
+Internista 3, Alfonso, seguros [Sanitroopers, Vaderslas]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Jueves, Segundo turno: Paciente 62, Jesus (herida quemadura, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Jueves, Segundo turno: Paciente 59, Juana (herida impacto, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Jueves, Segundo turno: Paciente 63, Estrella (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Jueves, Segundo turno: Paciente 64, Ernesto (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Jueves, Segundo turno: Paciente 43, Miguel (herida quemadura, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Jueves, Segundo turno: Paciente 65, Pepe (herida quemadura, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Jueves, Segundo turno: Paciente 66, Ernesto (herida impacto, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Jueves, Segundo turno: Internista 3, Alfonso, seguros [Sanitroopers, Vaderslas] trata al Paciente 50, Ernesto (herida impacto, seguro Sanitroopers, prioridad 2)
  
 CAMBIO DE TURNO: JUEVES, TERCER TURNO
-Jueves, Tercer turno: Paciente 67, Alfonso (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Jueves, Tercer turno: Paciente 68, Veronica (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Jueves, Tercer turno: Internista 1, Bruno, seguros [Sanitroopers, Yodacare] trata al Paciente 67, Alfonso (seguro Sanitroopers, prioridad 1) de su herida causada por impacto
-Jueves, Tercer turno: Paciente 69, Laura (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Jueves, Tercer turno: Paciente 70, Bruno (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Jueves, Tercer turno: Traumatologo 6, Jesus, seguros [Vaderslas, Sanitroopers] trata al Paciente 42, Wenceslao (seguro Sanitroopers, prioridad 2) de su herida causada por quemadura
-Jueves, Tercer turno: Paciente 71, Ana (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
+MÉDICOS DE GUARDIA: 
+Internista 9, Laura, seguros [Vaderslas, Sanitroopers]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Jueves, Tercer turno: Paciente 67, Laura (herida otros, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Jueves, Tercer turno: Paciente 68, Miguel (herida otros, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Jueves, Tercer turno: Internista 9, Laura, seguros [Vaderslas, Sanitroopers] trata al Paciente 66, Ernesto (herida impacto, seguro Vaderslas, prioridad 2)
+Jueves, Tercer turno: Paciente 69, Wenceslao (herida otros, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Jueves, Tercer turno: Paciente 70, Laura (herida impacto, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Jueves, Tercer turno: Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers] trata al Paciente 65, Pepe (herida quemadura, seguro Vaderslas, prioridad 2)
+Jueves, Tercer turno: Paciente 71, Bruno (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
  
 CAMBIO DE TURNO: VIERNES, PRIMER TURNO
-Viernes, Primer turno: Paciente 72, Pepa (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Viernes, Primer turno: Internista 11, Pedro, seguros [Vaderslas, Yodacare] trata al Paciente 26, Ernesto (seguro Vaderslas, prioridad 2) de su herida causada por impacto
-Viernes, Primer turno: Paciente 73, Marta (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Viernes, Primer turno: Paciente 74, Sara (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Viernes, Primer turno: Traumatologo 2, Wenceslao, seguros [Vaderslas, Sanitroopers] trata al Paciente 69, Laura (seguro Sanitroopers, prioridad 1) de su herida causada por quemadura
-Viernes, Primer turno: Paciente 75, Sara (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Viernes, Primer turno: Paciente 76, Juana (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Viernes, Primer turno: Paciente 57, Laura (seguro Sanitroopers, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+MÉDICOS DE GUARDIA: 
+Internista 11, Ernesto, seguros [Yodacare, Vaderslas]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Viernes, Primer turno: Paciente 72, Lola (herida quemadura, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Viernes, Primer turno: Internista 11, Ernesto, seguros [Yodacare, Vaderslas] trata al Paciente 70, Laura (herida impacto, seguro Yodacare, prioridad 1)
+Viernes, Primer turno: Paciente 73, Pepe (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Viernes, Primer turno: Paciente 74, Pepa (herida otros, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Viernes, Primer turno: Paciente 72, Lola (herida quemadura, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Viernes, Primer turno: Paciente 75, Eugenio (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Viernes, Primer turno: Paciente 76, Marta (herida quemadura, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 2
+Viernes, Primer turno: Paciente 67, Laura (herida otros, seguro Sanitroopers, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
  
 CAMBIO DE TURNO: VIERNES, SEGUNDO TURNO
-Viernes, Segundo turno: Paciente 77, Paula (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Viernes, Segundo turno: Paciente 78, Miguel (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Viernes, Segundo turno: Internista 11, Pedro, seguros [Vaderslas, Yodacare] trata al Paciente 78, Miguel (seguro Yodacare, prioridad 1) de su herida causada por impacto
-Viernes, Segundo turno: Paciente 79, Bruno (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Viernes, Segundo turno: Paciente 80, Juana (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Viernes, Segundo turno: Traumatologo 2, Wenceslao, seguros [Vaderslas, Sanitroopers] trata al Paciente 79, Bruno (seguro Sanitroopers, prioridad 1) de su herida causada por quemadura
-Viernes, Segundo turno: Paciente 81, Lola (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
+MÉDICOS DE GUARDIA: 
+Internista 1, Juana, seguros [Vaderslas, Sanitroopers]
+Traumatologo 2, Marta, seguros [Sanitroopers, Yodacare]
+Viernes, Segundo turno: Paciente 77, Jesus (herida otros, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Viernes, Segundo turno: Paciente 78, Juana (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Viernes, Segundo turno: Paciente 69, Wenceslao (herida otros, seguro Sanitroopers, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Viernes, Segundo turno: Paciente 79, Laura (herida quemadura, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Viernes, Segundo turno: Paciente 80, Laura (herida impacto, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Viernes, Segundo turno: Internista 1, Juana, seguros [Vaderslas, Sanitroopers] trata al Paciente 41, Jesus (herida impacto, seguro Vaderslas, prioridad 2)
+Viernes, Segundo turno: Paciente 81, Estrella (herida otros, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
  
 CAMBIO DE TURNO: VIERNES, TERCER TURNO
-Viernes, Tercer turno: Paciente 82, Eugenio (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Viernes, Tercer turno: Traumatologo 6, Jesus, seguros [Vaderslas, Sanitroopers] trata al Paciente 61, Ernesto (seguro Vaderslas, prioridad 2) de su herida causada por quemadura
-Viernes, Tercer turno: Paciente 83, Paula (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Viernes, Tercer turno: Paciente 84, Pepa (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Viernes, Tercer turno: Paciente 73, Marta (seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Viernes, Tercer turno: Paciente 85, Pepe (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Viernes, Tercer turno: Paciente 86, Wenceslao (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Viernes, Tercer turno: Internista 7, Alfonso, seguros [Sanitroopers, Yodacare] trata al Paciente 86, Wenceslao (seguro Yodacare, prioridad 1) de su herida causada por impacto
+MÉDICOS DE GUARDIA: 
+Internista 1, Juana, seguros [Vaderslas, Sanitroopers]
+Traumatologo 0, Veronica, seguros [Sanitroopers, Yodacare]
+Viernes, Tercer turno: Paciente 82, Estrella (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Viernes, Tercer turno: Paciente 81, Estrella (herida otros, seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Viernes, Tercer turno: Paciente 83, Bruno (herida otros, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Viernes, Tercer turno: Paciente 84, Juana (herida otros, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Viernes, Tercer turno: Paciente 84, Juana (herida otros, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Viernes, Tercer turno: Paciente 85, Marta (herida otros, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Viernes, Tercer turno: Paciente 86, Juan (herida impacto, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Viernes, Tercer turno: Paciente 83, Bruno (herida otros, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
  
 CAMBIO DE TURNO: SABADO, PRIMER TURNO
-Sabado, Primer turno: Paciente 87, Ernesto (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Sabado, Primer turno: Paciente 88, Miguel (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Sabado, Primer turno: Internista 9, Juana, seguros [Vaderslas, Yodacare] trata al Paciente 70, Bruno (seguro Yodacare, prioridad 1) de su herida causada por impacto
-Sabado, Primer turno: Paciente 89, Ana (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Sabado, Primer turno: Paciente 90, Pepa (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Sabado, Primer turno: Paciente 88, Miguel (seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Sabado, Primer turno: Paciente 91, Sara (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
+MÉDICOS DE GUARDIA: 
+Internista 1, Juana, seguros [Vaderslas, Sanitroopers]
+Traumatologo 8, Paula, seguros [Sanitroopers, Vaderslas]
+Sabado, Primer turno: Paciente 87, Ana (herida impacto, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Sabado, Primer turno: Paciente 88, Wenceslao (herida quemadura, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 2
+Sabado, Primer turno: Internista 1, Juana, seguros [Vaderslas, Sanitroopers] trata al Paciente 80, Laura (herida impacto, seguro Vaderslas, prioridad 1)
+Sabado, Primer turno: Paciente 89, Eugenio (herida otros, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Sabado, Primer turno: Paciente 90, Ernesto (herida otros, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Sabado, Primer turno: Paciente 85, Marta (herida otros, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Sabado, Primer turno: Paciente 91, Marta (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
  
 CAMBIO DE TURNO: SABADO, SEGUNDO TURNO
-Sabado, Segundo turno: Paciente 92, Pepa (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Sabado, Segundo turno: Traumatologo 10, Miguel, seguros [Yodacare, Sanitroopers] trata al Paciente 90, Pepa (seguro Yodacare, prioridad 2) de su herida causada por quemadura
-Sabado, Segundo turno: Paciente 93, Pepa (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Sabado, Segundo turno: Paciente 94, Juan (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Sabado, Segundo turno: Paciente 89, Ana (seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Sabado, Segundo turno: Paciente 95, Estrella (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Sabado, Segundo turno: Paciente 96, Alfonso (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Sabado, Segundo turno: Internista 5, Sara, seguros [Vaderslas, Sanitroopers] trata al Paciente 65, Juan (seguro Sanitroopers, prioridad 1) de su herida causada por impacto
+MÉDICOS DE GUARDIA: 
+Internista 5, Wenceslao, seguros [Yodacare, Vaderslas]
+Traumatologo 0, Veronica, seguros [Sanitroopers, Yodacare]
+Sabado, Segundo turno: Paciente 92, Estrella (herida impacto, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Sabado, Segundo turno: Internista 5, Wenceslao, seguros [Yodacare, Vaderslas] trata al Paciente 86, Juan (herida impacto, seguro Vaderslas, prioridad 1)
+Sabado, Segundo turno: Paciente 93, Sara (herida otros, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Sabado, Segundo turno: Paciente 94, Jesus (herida quemadura, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Sabado, Segundo turno: Paciente 93, Sara (herida otros, seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Sabado, Segundo turno: Paciente 95, Pedro (herida impacto, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Sabado, Segundo turno: Paciente 96, Estrella (herida quemadura, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Sabado, Segundo turno: Internista 5, Wenceslao, seguros [Yodacare, Vaderslas] trata al Paciente 92, Estrella (herida impacto, seguro Vaderslas, prioridad 1)
  
 CAMBIO DE TURNO: SABADO, TERCER TURNO
-Sabado, Tercer turno: Paciente 97, Paula (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Sabado, Tercer turno: Paciente 98, Estrella (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Sabado, Tercer turno: Traumatologo 0, Lola, seguros [Vaderslas, Sanitroopers] trata al Paciente 98, Estrella (seguro Sanitroopers, prioridad 1) de su herida causada por quemadura
-Sabado, Tercer turno: Paciente 99, Ana (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Sabado, Tercer turno: Paciente 100, Pepe (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Sabado, Tercer turno: Paciente 85, Pepe (seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Sabado, Tercer turno: Paciente 101, Sara (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
+MÉDICOS DE GUARDIA: 
+Internista 1, Juana, seguros [Vaderslas, Sanitroopers]
+Traumatologo 2, Marta, seguros [Sanitroopers, Yodacare]
+Sabado, Tercer turno: Paciente 97, Eugenio (herida otros, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Sabado, Tercer turno: Paciente 98, Bruno (herida quemadura, seguro Sanitroopers, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Sabado, Tercer turno: Paciente 97, Eugenio (herida otros, seguro Yodacare, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Sabado, Tercer turno: Paciente 99, Juan (herida impacto, seguro Yodacare, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Sabado, Tercer turno: Paciente 100, Miguel (herida impacto, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Sabado, Tercer turno: Paciente 71, Bruno (herida impacto, seguro Yodacare, prioridad 2) ha sido dervado a otra nave hospital para realizar su tratamiento
+Sabado, Tercer turno: Paciente 101, Marta (herida impacto, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
  
 CAMBIO DE TURNO: DOMINGO, PRIMER TURNO
-Domingo, Primer turno: Paciente 102, Pedro (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Domingo, Primer turno: Traumatologo 0, Lola, seguros [Vaderslas, Sanitroopers] trata al Paciente 102, Pedro (seguro Vaderslas, prioridad 1) de su herida causada por quemadura
-Domingo, Primer turno: Paciente 103, Pepe (seguro Yodacare, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Domingo, Primer turno: Paciente 104, Estrella (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Domingo, Primer turno: Paciente 82, Eugenio (seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
-Domingo, Primer turno: Paciente 105, Estrella (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Domingo, Primer turno: Paciente 106, Miguel (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Domingo, Primer turno: Internista 9, Juana, seguros [Vaderslas, Yodacare] trata al Paciente 105, Estrella (seguro Vaderslas, prioridad 1) de su herida causada por impacto
+MÉDICOS DE GUARDIA: 
+Internista 5, Wenceslao, seguros [Yodacare, Vaderslas]
+Traumatologo 6, Estrella, seguros [Vaderslas, Sanitroopers]
+Domingo, Primer turno: Paciente 102, Pepa (herida impacto, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Domingo, Primer turno: Internista 5, Wenceslao, seguros [Yodacare, Vaderslas] trata al Paciente 101, Marta (herida impacto, seguro Yodacare, prioridad 1)
+Domingo, Primer turno: Paciente 103, Marta (herida quemadura, seguro Vaderslas, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Domingo, Primer turno: Paciente 104, Wenceslao (herida quemadura, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Domingo, Primer turno: Internista 5, Wenceslao, seguros [Yodacare, Vaderslas] trata al Paciente 78, Juana (herida impacto, seguro Yodacare, prioridad 2)
+Domingo, Primer turno: Paciente 105, Juana (herida otros, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Domingo, Primer turno: Paciente 106, Ernesto (herida impacto, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 3
+Domingo, Primer turno: Internista 5, Wenceslao, seguros [Yodacare, Vaderslas] trata al Paciente 102, Pepa (herida impacto, seguro Vaderslas, prioridad 1)
  
 CAMBIO DE TURNO: DOMINGO, SEGUNDO TURNO
-Domingo, Segundo turno: Paciente 107, Eugenio (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Domingo, Segundo turno: Paciente 108, Eugenio (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 2
-Domingo, Segundo turno: Internista 7, Alfonso, seguros [Sanitroopers, Yodacare] trata al Paciente 108, Eugenio (seguro Yodacare, prioridad 1) de su herida causada por impacto
-Domingo, Segundo turno: Paciente 109, Eugenio (seguro Vaderslas, prioridad 1) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Domingo, Segundo turno: Paciente 110, Paula (seguro Vaderslas, prioridad 2) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
-Domingo, Segundo turno: Traumatologo 10, Miguel, seguros [Yodacare, Sanitroopers] trata al Paciente 101, Sara (seguro Yodacare, prioridad 1) de su herida causada por quemadura
-Domingo, Segundo turno: Paciente 111, Marta (seguro Yodacare, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 2
+MÉDICOS DE GUARDIA: 
+Internista 1, Juana, seguros [Vaderslas, Sanitroopers]
+Traumatologo 2, Marta, seguros [Sanitroopers, Yodacare]
+Domingo, Segundo turno: Paciente 107, Wenceslao (herida impacto, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 1
+Domingo, Segundo turno: Paciente 108, Marta (herida impacto, seguro Yodacare, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 2
+Domingo, Segundo turno: Paciente 105, Juana (herida otros, seguro Vaderslas, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Domingo, Segundo turno: Paciente 109, Juan (herida impacto, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 1
+Domingo, Segundo turno: Paciente 110, Sara (herida quemadura, seguro Sanitroopers, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 2
+Domingo, Segundo turno: Paciente 108, Marta (herida impacto, seguro Yodacare, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+Domingo, Segundo turno: Paciente 111, Ernesto (herida otros, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 2
  
 CAMBIO DE TURNO: DOMINGO, TERCER TURNO
-Domingo, Tercer turno: Paciente 112, Marta (seguro Sanitroopers, prioridad 3) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Domingo, Tercer turno: Internista 3, Juana, seguros [Vaderslas, Yodacare] trata al Paciente 109, Eugenio (seguro Vaderslas, prioridad 1) de su herida causada por impacto
-Domingo, Tercer turno: Paciente 113, Estrella (seguro Sanitroopers, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 3
-Domingo, Tercer turno: Paciente 114, Lola (seguro Yodacare, prioridad 1) ha llegado a la nave médica con herida causada por quemadura y ha sido colocado en la sala 1
-Domingo, Tercer turno: Traumatologo 10, Miguel, seguros [Yodacare, Sanitroopers] trata al Paciente 114, Lola (seguro Yodacare, prioridad 1) de su herida causada por quemadura
-Domingo, Tercer turno: Paciente 115, Alfonso (seguro Sanitroopers, prioridad 2) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 3
-Domingo, Tercer turno: Paciente 116, Miguel (seguro Vaderslas, prioridad 3) ha llegado a la nave médica con herida causada por impacto y ha sido colocado en la sala 1
-Domingo, Tercer turno: Paciente 113, Estrella (seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
+MÉDICOS DE GUARDIA: 
+Internista 9, Laura, seguros [Vaderslas, Sanitroopers]
+Traumatologo 4, Ernesto, seguros [Yodacare, Vaderslas]
+Domingo, Tercer turno: Paciente 112, Lola (herida impacto, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Domingo, Tercer turno: Traumatologo 4, Ernesto, seguros [Yodacare, Vaderslas] trata al Paciente 104, Wenceslao (herida quemadura, seguro Vaderslas, prioridad 2)
+Domingo, Tercer turno: Paciente 113, Eugenio (herida otros, seguro Vaderslas, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 1
+Domingo, Tercer turno: Paciente 114, Paula (herida quemadura, seguro Vaderslas, prioridad 2) ha llegado a la nave médica y ha sido colocado en la sala 3
+Domingo, Tercer turno: Internista 9, Laura, seguros [Vaderslas, Sanitroopers] trata al Paciente 112, Lola (herida impacto, seguro Vaderslas, prioridad 1)
+Domingo, Tercer turno: Paciente 115, Sara (herida otros, seguro Sanitroopers, prioridad 1) ha llegado a la nave médica y ha sido colocado en la sala 3
+Domingo, Tercer turno: Paciente 116, Marta (herida quemadura, seguro Yodacare, prioridad 3) ha llegado a la nave médica y ha sido colocado en la sala 2
+Domingo, Tercer turno: Paciente 90, Ernesto (herida otros, seguro Sanitroopers, prioridad 1) ha sido dervado a otra nave hospital para realizar su tratamiento
  
 FIN DE LA SIMULACIÓN

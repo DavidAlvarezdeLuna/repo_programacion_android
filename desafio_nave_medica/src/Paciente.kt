@@ -32,20 +32,19 @@ class Paciente (nidi:Int? = null, nombre:String? = null, val seguro:String? = nu
         var medicoNecesitado:String = ""
         if(this.herida.equals("quemadura")){
             medicoNecesitado = "Traumatologo"
-        }else{
-            if(this.herida.equals("impacto")){
+        }else {
+            if (this.herida.equals("impacto")) {
                 medicoNecesitado = "Internista"
+            } else {
+                medicoNecesitado = "Otro"
             }
         }
+
         return medicoNecesitado
     }
 
-    fun mostrarHerida():String?{
-        return this.herida
-    }
-
     override fun toString(): String{
-        return this.javaClass.name+" "+this.nidi+", "+this.nombre+" (seguro "+this.seguro+", prioridad "+this.prioridad+")"
+        return this.javaClass.name+" "+this.nidi+", "+this.nombre+" (herida "+this.herida+", seguro "+this.seguro+", prioridad "+this.prioridad+")"
     }
 
 }
