@@ -1,5 +1,5 @@
 
-abstract class Persona(var nidi:Int, var nombre:String) {
+abstract class Persona(open var nidi:Int? = null, open var nombre:String? = null) {
 
     companion object{
         var nidi = 0

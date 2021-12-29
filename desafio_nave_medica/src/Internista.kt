@@ -1,10 +1,10 @@
 import kotlin.collections.ArrayList
 
-class Internista(nidi:Int, nombre:String, ocupado:Boolean, listaSeguros:ArrayList<String>):Medico(nidi,nombre,ocupado,listaSeguros) {
+class Internista(nidi:Int? = null, nombre:String? = null, ocupado:Boolean? = null, listaSeguros:ArrayList<String>? = null):Medico(nidi,nombre,ocupado,listaSeguros) {
 
-    class Builder(var nidi:Int, var nombre:String, var ocupado:Boolean, var listaSeguros:ArrayList<String>){
+    class Builder(var nidi:Int? = null, var nombre:String? = null, var ocupado:Boolean? = null, var listaSeguros:ArrayList<String>? = null){
 
-        /*fun nidi(nidi:Int):Builder{
+        fun nidi(nidi:Int):Builder{
             this.nidi = nidi
             return this
         }
@@ -19,7 +19,7 @@ class Internista(nidi:Int, nombre:String, ocupado:Boolean, listaSeguros:ArrayLis
         fun listaSeguros(listaSeguros:ArrayList<String>):Builder{
             this.listaSeguros = listaSeguros
             return this
-        }*/
+        }
         fun build():Internista{
             return Internista(nidi,nombre,ocupado,listaSeguros)
         }

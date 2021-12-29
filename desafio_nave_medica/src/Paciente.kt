@@ -1,16 +1,16 @@
 
-class Paciente (nidi:Int, nombre:String, var seguro:String, var herida:String, var prioridad:Int):Persona(nidi,nombre){
+class Paciente (nidi:Int? = null, nombre:String? = null, var seguro:String? = null, var herida:String? = null, var prioridad:Int? = null):Persona(nidi,nombre){
 
-    class Builder(var nidi:Int, var nombre:String, var seguro:String, var herida:String, var prioridad:Int){
+    class Builder(var nidi:Int? = null, var nombre:String? = null, var seguro:String? = null, var herida:String? = null, var prioridad:Int? = null){
 
-        /*fun nidi(nidi:Int):Builder{
+        fun nidi(nidi:Int):Builder{
             this.nidi = nidi
             return this
         }
         fun nombre(nombre:String):Builder{
             this.nombre = nombre
             return this
-        }*/
+        }
         fun seguro(seguro:String):Builder{
             this.seguro = seguro
             return this

@@ -8,65 +8,55 @@ object Nave {
         return "La nave médica Nebulón-B Frigate"
     }
 
-    fun ingresarPaciente(p:Paciente):Int{
+    fun comprobarSalaMasVacia():SalaEspera{
         var llenadaMinima:Int = -1
         var listaSalasMasVacias: ArrayList<SalaEspera> = ArrayList()
         for(sala in listaSalas){
             if(llenadaMinima == -1){
-                llenadaMinima = sala.listaPacientes.size
+                llenadaMinima = sala.listaPacientes!!.size
                 listaSalasMasVacias.add(sala)
             }else{
-                if(sala.listaPacientes.size < llenadaMinima){
+                if(sala.listaPacientes!!.size < llenadaMinima){
                     listaSalasMasVacias.clear()
                     listaSalasMasVacias.add(sala)
-                    llenadaMinima = sala.listaPacientes.size
+                    llenadaMinima = sala.listaPacientes!!.size
                 }else{
-                    if(sala.listaPacientes.size == llenadaMinima){
-                        llenadaMinima = sala.listaPacientes.size
+                    if(sala.listaPacientes!!.size == llenadaMinima){
+                        llenadaMinima = sala.listaPacientes!!.size
                         listaSalasMasVacias.add(sala)
                     }
                 }
             }
         }
 
-        var numSalaSeleccionada = -1
+        lateinit var salaSel:SalaEspera
 
         if(listaSalasMasVacias.size == 1){
-            listaSalasMasVacias[0].listaPacientes.put(p.nidi,p)
-            numSalaSeleccionada = listaSalasMasVacias[0].numero
+            salaSel = listaSalasMasVacias[0]
         }else{
             if(listaSalasMasVacias.size > 1){
                 var azarSala = Random.nextInt(0,listaSalasMasVacias.size)
-                listaSalasMasVacias[azarSala].listaPacientes.put(p.nidi,p)
-                numSalaSeleccionada = listaSalasMasVacias[azarSala].numero
+                salaSel = listaSalasMasVacias[azarSala]
             }
         }
 
-        for(sala in listaSalas){
-            println("SALA "+sala.numero)
-            for(paci in sala.listaPacientes){
-                println(paci.toString())
-            }
-        }
-
-        return numSalaSeleccionada
+        return salaSel
     }
+
 
     fun comprobarSalaMasLlena():SalaEspera{
         var llenadaMaxima:Int = -1
         var listaSalasMasLlenas: ArrayList<SalaEspera> = ArrayList()
         for(sala in listaSalas){
 
-            println("SALA NUMERO "+sala.numero+" SIZE "+sala.listaPacientes.size)
-
-            if(sala.listaPacientes.size > llenadaMaxima){
-                llenadaMaxima = sala.listaPacientes.size
+            if(sala.listaPacientes!!.size > llenadaMaxima){
+                llenadaMaxima = sala.listaPacientes!!.size
                 listaSalasMasLlenas.clear()
                 listaSalasMasLlenas.add(sala)
 
             }else{
-                if(sala.listaPacientes.size == llenadaMaxima){
-                    llenadaMaxima = sala.listaPacientes.size
+                if(sala.listaPacientes!!.size == llenadaMaxima){
+                    llenadaMaxima = sala.listaPacientes!!.size
                     listaSalasMasLlenas.add(sala)
                 }
             }
@@ -74,15 +64,22 @@ object Nave {
 
         var salaDevuelta:SalaEspera = listaSalas[0]
         if(listaSalasMasLlenas.size == 1){
-            println("SALA MAS LLENA: "+listaSalasMasLlenas)
             salaDevuelta = listaSalasMasLlenas[0]
         }else{
-            println("SALAS MAS LLENAS: "+listaSalasMasLlenas)
             var azarSala = Random.nextInt(0,listaSalasMasLlenas.size)
             salaDevuelta = listaSalasMasLlenas[azarSala]
         }
 
         return salaDevuelta
+    }
+
+    fun verSalas(){
+        for(sala in listaSalas){
+            println(sala.toString())
+            for(paci in sala.listaPacientes!!){
+                println(paci.toString())
+            }
+        }
     }
 
 }

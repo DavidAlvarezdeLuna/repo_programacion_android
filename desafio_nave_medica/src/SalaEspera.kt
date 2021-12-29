@@ -1,10 +1,10 @@
 import kotlin.collections.HashMap
 import kotlin.random.Random
 
-class SalaEspera(var numero:Int, var listaPacientes:HashMap<Int,Paciente>) {
+class SalaEspera(var numero:Int? = null, var listaPacientes:HashMap<Int,Paciente>? = null) {
 
-    open class Builder(var numero:Int, var listaPacientes:HashMap<Int,Paciente>){
-        fun nombre(numero:Int):Builder{
+    open class Builder(var numero:Int? = null, var listaPacientes:HashMap<Int,Paciente>? = null){
+        fun numero(numero:Int):Builder{
             this.numero = numero
             return this
         }
@@ -17,32 +17,39 @@ class SalaEspera(var numero:Int, var listaPacientes:HashMap<Int,Paciente>) {
         }
     }
 
-    fun obtenerPaciente():Paciente?{
-        var listaPosiblesPrioridad:ArrayList<Paciente> = ArrayList()
-        for(paci in this.listaPacientes.values){
+    fun obtenerPaciente():Paciente?{ //saco el primer paciente de los mas prioritarios de una sala
+        var pacienteTratar:Paciente? = null
+        for(paci in this.listaPacientes!!.values){
             if(paci.prioridad==1){
-                listaPosiblesPrioridad.add(paci)
+                pacienteTratar = paci
             }
         }
 
-        if(listaPosiblesPrioridad.isEmpty()){
-            for(paci in this.listaPacientes.values){
+        if(pacienteTratar == null){
+            for(paci in this.listaPacientes!!.values){
                 if(paci.prioridad==2){
-                    listaPosiblesPrioridad.add(paci)
+                    pacienteTratar = paci
                 }
             }
         }
 
-        if(listaPosiblesPrioridad.isEmpty()){
-            for(paci in this.listaPacientes.values){
+        if(pacienteTratar == null){
+            for(paci in this.listaPacientes!!.values){
                 if(paci.prioridad==3){
-                    listaPosiblesPrioridad.add(paci)
+                    pacienteTratar = paci
                 }
             }
         }
 
-        var pacienteTratar:Paciente? = listaPosiblesPrioridad[Random.nextInt(0,listaPosiblesPrioridad.size)]
         return pacienteTratar
+    }
+
+    fun liberarPaciente(nidi:Int?){
+        this.listaPacientes!!.remove(nidi)
+    }
+
+    fun ingresarPaciente(p:Paciente){
+        this.listaPacientes!!.put(p.nidi!!,p)
     }
 
     override fun toString(): String{

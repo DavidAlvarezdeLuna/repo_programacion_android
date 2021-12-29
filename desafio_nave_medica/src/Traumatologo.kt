@@ -1,10 +1,10 @@
 import kotlin.collections.ArrayList
 
-class Traumatologo(nidi:Int, nombre:String, ocupado:Boolean, listaSeguros:ArrayList<String>):Medico(nidi,nombre,ocupado,listaSeguros) {
+class Traumatologo(nidi:Int? = null, nombre:String? = null, ocupado:Boolean? = null, listaSeguros:ArrayList<String>? = null):Medico(nidi,nombre,ocupado,listaSeguros) {
 
-    class Builder(var nidi:Int, var nombre:String, var ocupado:Boolean, var listaSeguros:ArrayList<String>){
+    class Builder(var nidi:Int? = null, var nombre:String? = null, var ocupado:Boolean? = null, var listaSeguros:ArrayList<String>? = null){
 
-        /*fun nidi(nidi:Int):Builder{
+        fun nidi(nidi:Int):Builder{
             this.nidi = nidi
             return this
         }
@@ -19,7 +19,7 @@ class Traumatologo(nidi:Int, nombre:String, ocupado:Boolean, listaSeguros:ArrayL
         fun listaSeguros(listaSeguros:ArrayList<String>):Builder{
             this.listaSeguros = listaSeguros
             return this
-        }*/
+        }
         fun build():Traumatologo{
             return Traumatologo(nidi,nombre,ocupado,listaSeguros)
         }

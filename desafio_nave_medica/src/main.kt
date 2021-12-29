@@ -1,7 +1,5 @@
 import Constantes.Constantes
 import Factorias.Factoria
-import kotlin.random.Random
-import kotlin.collections.HashMap
 import Auxiliar.Fichero
 
 fun main(){
@@ -24,10 +22,8 @@ fun main(){
         Nave.listaSalas.add(Factoria.generarSala(i))
     }
 
-
     //COMIENZA LA SIMULACIÓN
     var segundo:Int = 0
-    var numSalaSeleccionada:Int = -1
     var tratadoInterTurno:Int = 0
     var tratadoTraumaTurno:Int = 0
 
@@ -35,83 +31,61 @@ fun main(){
     var turno:String = listaTurnos[(segundo%Constantes.DURACION_DIA)/Constantes.DURACION_TURNO]
     var momento:String = dia+", "+turno
 
-    do{
-        //println("Segundo " + segundo)
-        //Fichero.escribirLinea("Segundo " + segundo)
+    println("SIMULACIÓN DE FUNCIONAMIENTO DE LA NAVE NEBULÓN-B FRIGATE")
+    Fichero.escribirLinea("SIMULACIÓN DE FUNCIONAMIENTO DE LA NAVE NEBULÓN-B FRIGATE")
+    println(momento.uppercase())
+    Fichero.escribirLinea(momento.uppercase())
 
+    do{
         if(segundo%2 == 0){ //cada dos segundos
+            //Nave.verSalas()
             //genero un paciente nuevo
             var p:Paciente = Factoria.generarPaciente()
 
             //Compruebo que sala tiene menos pacientes, e ingreso alli al paciente nuevo
-            numSalaSeleccionada = Nave.ingresarPaciente(p)
-            println(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.herida+" y ha sido colocado en la sala "+numSalaSeleccionada.toString())
-            Fichero.escribirLinea(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.herida+" y ha sido colocado en la sala "+numSalaSeleccionada.toString())
+            var salaSel = Nave.comprobarSalaMasVacia()
+            salaSel.ingresarPaciente(p)
+
+            println(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.herida+" y ha sido colocado en la sala "+salaSel.numero)
+            Fichero.escribirLinea(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.herida+" y ha sido colocado en la sala "+salaSel.numero)
         }
 
         if(segundo%4 == 0){ //cada cuatro segundos
             //compruebo que sala tiene mas pacientes. Si tienen el varias coinciden, saco una al azar
             var salaSeleccionada:SalaEspera = Nave.comprobarSalaMasLlena()
-            //println("size de la sala "+salaSeleccionada.numero+": "+salaSeleccionada.listaPacientes.size)
-            println("SALA SELECCIONADA: "+salaSeleccionada.numero)
-            if(salaSeleccionada.listaPacientes.isEmpty()){
+            if(salaSeleccionada.listaPacientes!!.isEmpty()){
                 println(momento+": "+"Actualmente no hay pacientes a tratar!")
                 Fichero.escribirLinea(momento+": "+"Actualmente no hay pacientes a tratar!")
             }else{
                 //saco el paciente y procedo a comprobar si algun médico puede atender al paciente
                 var pacienteTratar = salaSeleccionada.obtenerPaciente()
-                println(pacienteTratar.toString())
 
                 //saco el tipo de medico que necesita el paciente
                 var medicoNecesitado:String = pacienteTratar!!.obtenerTipoMedico()
 
                 var tratar = false
                 for(med in listaMedicos){
-                    if(!med.ocupado){
-                        if(med.javaClass.name == medicoNecesitado){
+                    if(!tratar){ //si ya se ha tratado al paciente acaba el for. Si no, compruebo si el siguiente medico puede tratar al paciente
+                        tratar=med.puedeTratar(pacienteTratar,medicoNecesitado,tratadoInterTurno,tratadoTraumaTurno)
+
+                        if(tratar){ //el medico trata al paciente
+                            println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.herida)
+                            Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar?.herida)
+                            med.ocupado = true
+                            salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
                             if(med is Internista){
-                                println("elintern")
-                                if (tratadoInterTurno < Constantes.MED_ESP_TURNO){
-                                    println("constante ok")
-                                    for(segu in med.listaSeguros) {
-                                        if (segu == pacienteTratar.seguro) {
-                                            println("seguro ok")
-                                            tratar = true
-                                            tratadoInterTurno++
-                                        }
-                                    }
-                                }
+                                tratadoInterTurno++
                             }else{
                                 if(med is Traumatologo){
-                                    println("eltrauma")
-                                    if (tratadoTraumaTurno < Constantes.MED_ESP_TURNO) {
-                                        println("constante ok")
-                                        for (segu in med.listaSeguros) {
-                                            if (segu == pacienteTratar?.seguro) {
-                                                println("seguro ok")
-                                                tratar = true
-                                                tratadoTraumaTurno++
-                                            }
-                                        }
-                                    }
+                                    tratadoTraumaTurno++
                                 }
                             }
                         }
                     }
-
-                    if(tratar){
-                        println("SEGUROS "+pacienteTratar.seguro+" y "+med.listaSeguros)
-                        println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.herida)
-                        Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar?.herida)
-                        med.ocupado = true
-                        salaSeleccionada.listaPacientes.remove(pacienteTratar.nidi)
-                        tratar = false
-                    }
                 }
 
-                if(!tratar){
-                    //derivo al paciente a otra nave
-                    salaSeleccionada.listaPacientes.remove(pacienteTratar.nidi)
+                if(!tratar){ //si ningun medico ha podido tratar al paciente, se deriva a otra nave médica
+                    salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
                     println(momento+": "+pacienteTratar.toString()+" ha sido derivado a otra nave hospital para realizar su tratamiento")
                     Fichero.escribirLinea(momento+": "+pacienteTratar.toString()+" ha sido dervado a otra nave hospital para realizar su tratamiento")
                 }
@@ -120,21 +94,20 @@ fun main(){
 
         segundo++
 
-        if(segundo%Constantes.DURACION_TURNO == 0){ //10 segundos
-            //cambio de turno. Reseteo las condiciones necesarias
+        if(segundo%Constantes.DURACION_TURNO == 0){ //cambio de turno y actualizo datos
             if(segundo != Constantes.DURACION_DIA*Constantes.DIAS){
+
+                Thread.sleep(500)
 
                 dia = listaDias[segundo/Constantes.DURACION_DIA]
                 turno = listaTurnos[(segundo%Constantes.DURACION_DIA)/Constantes.DURACION_TURNO]
-                momento = dia+", "+turno
-
+                momento = dia+", "+turno //Indica el dia y turno de la accion registrada
                 println(" ")
                 Fichero.escribirLinea(" ")
                 println("CAMBIO DE TURNO: "+momento.uppercase())
                 Fichero.escribirLinea("CAMBIO DE TURNO: "+momento.uppercase())
             }
 
-            numSalaSeleccionada = -1
             tratadoInterTurno = 0
             tratadoTraumaTurno = 0
 
@@ -144,9 +117,13 @@ fun main(){
 
             //En cada turno distribuyo a los médicos al azar
             listaMedicos.shuffle()
-
         }
 
     }while (segundo < Constantes.DURACION_DIA*Constantes.DIAS)
+
+    println(" ")
+    Fichero.escribirLinea(" ")
+    println("FIN DE LA SIMULACIÓN")
+    Fichero.escribirLinea("FIN DE LA SIMULACIÓN")
 
 }
