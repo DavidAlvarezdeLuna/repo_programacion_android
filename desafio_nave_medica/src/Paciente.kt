@@ -1,5 +1,5 @@
 
-class Paciente (nidi:Int? = null, nombre:String? = null, var seguro:String? = null, var herida:String? = null, var prioridad:Int? = null):Persona(nidi,nombre){
+class Paciente (nidi:Int? = null, nombre:String? = null, val seguro:String? = null, private val herida:String? = null, val prioridad:Int? = null):Persona(nidi,nombre){
 
     class Builder(var nidi:Int? = null, var nombre:String? = null, var seguro:String? = null, var herida:String? = null, var prioridad:Int? = null){
 
@@ -26,7 +26,6 @@ class Paciente (nidi:Int? = null, nombre:String? = null, var seguro:String? = nu
         fun build():Paciente{
             return Paciente(nidi,nombre,seguro,herida,prioridad)
         }
-
     }
 
     fun obtenerTipoMedico():String{
@@ -39,6 +38,10 @@ class Paciente (nidi:Int? = null, nombre:String? = null, var seguro:String? = nu
             }
         }
         return medicoNecesitado
+    }
+
+    fun mostrarHerida():String?{
+        return this.herida
     }
 
     override fun toString(): String{

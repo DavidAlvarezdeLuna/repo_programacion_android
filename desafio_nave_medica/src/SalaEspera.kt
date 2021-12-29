@@ -1,7 +1,7 @@
 import kotlin.collections.HashMap
 import kotlin.random.Random
 
-class SalaEspera(var numero:Int? = null, var listaPacientes:HashMap<Int,Paciente>? = null) {
+class SalaEspera(val numero:Int? = null, val listaPacientes:HashMap<Int,Paciente>? = null) {
 
     open class Builder(var numero:Int? = null, var listaPacientes:HashMap<Int,Paciente>? = null){
         fun numero(numero:Int):Builder{
@@ -26,7 +26,7 @@ class SalaEspera(var numero:Int? = null, var listaPacientes:HashMap<Int,Paciente
         }
 
         if(pacienteTratar == null){
-            for(paci in this.listaPacientes!!.values){
+            for(paci in this.listaPacientes.values){
                 if(paci.prioridad==2){
                     pacienteTratar = paci
                 }
@@ -34,7 +34,7 @@ class SalaEspera(var numero:Int? = null, var listaPacientes:HashMap<Int,Paciente
         }
 
         if(pacienteTratar == null){
-            for(paci in this.listaPacientes!!.values){
+            for(paci in this.listaPacientes.values){
                 if(paci.prioridad==3){
                     pacienteTratar = paci
                 }

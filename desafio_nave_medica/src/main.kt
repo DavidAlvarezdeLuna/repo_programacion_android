@@ -10,16 +10,14 @@ fun main(){
     var listaDias:Array<String> = arrayOf("Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo")
     var listaTurnos:Array<String> = arrayOf("Primer turno","Segundo turno","Tercer turno")
 
-    //Creo los medicos
-    var listaMedicos: ArrayList<Medico> = ArrayList()
-    for(i in 0..Constantes.NUM_MED_ESP){
-        listaMedicos.add(Factoria.generarTraumatologo())
-        listaMedicos.add(Factoria.generarInternista())
-    }
-
     //Creo las salas y las añado a la nave
     for(i in 1..Constantes.NUM_SALAS){
-        Nave.listaSalas.add(Factoria.generarSala(i))
+         Nave.aniadirSala(i)
+    }
+
+    //Creo los medicos
+    for(i in 0..Constantes.NUM_MED_ESP){
+        Nave.aniadirMedicos()
     }
 
     //COMIENZA LA SIMULACIÓN
@@ -46,12 +44,12 @@ fun main(){
             var salaSel = Nave.comprobarSalaMasVacia()
             salaSel.ingresarPaciente(p)
 
-            println(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.herida+" y ha sido colocado en la sala "+salaSel.numero)
-            Fichero.escribirLinea(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.herida+" y ha sido colocado en la sala "+salaSel.numero)
+            println(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.mostrarHerida()+" y ha sido colocado en la sala "+salaSel.numero)
+            Fichero.escribirLinea(momento+": "+p.toString() + " ha llegado a la nave médica con herida causada por "+p.mostrarHerida()+" y ha sido colocado en la sala "+salaSel.numero)
         }
 
         if(segundo%4 == 0){ //cada cuatro segundos
-            //compruebo que sala tiene mas pacientes. Si tienen el varias coinciden, saco una al azar
+            //compruebo que sala tiene mas pacientes. Si varias coinciden, saco una al azar
             var salaSeleccionada:SalaEspera = Nave.comprobarSalaMasLlena()
             if(salaSeleccionada.listaPacientes!!.isEmpty()){
                 println(momento+": "+"Actualmente no hay pacientes a tratar!")
@@ -64,14 +62,14 @@ fun main(){
                 var medicoNecesitado:String = pacienteTratar!!.obtenerTipoMedico()
 
                 var tratar = false
-                for(med in listaMedicos){
+                for(med in Nave.listaMedicos){
                     if(!tratar){ //si ya se ha tratado al paciente acaba el for. Si no, compruebo si el siguiente medico puede tratar al paciente
                         tratar=med.puedeTratar(pacienteTratar,medicoNecesitado,tratadoInterTurno,tratadoTraumaTurno)
 
                         if(tratar){ //el medico trata al paciente
-                            println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.herida)
-                            Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar?.herida)
-                            med.ocupado = true
+                            println(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.mostrarHerida())
+                            Fichero.escribirLinea(momento+": "+med.toString()+" trata al "+pacienteTratar.toString()+" de su herida causada por "+pacienteTratar.mostrarHerida())
+                            med.estaOcupado()
                             salaSeleccionada.liberarPaciente(pacienteTratar.nidi)
                             if(med is Internista){
                                 tratadoInterTurno++
@@ -111,12 +109,12 @@ fun main(){
             tratadoInterTurno = 0
             tratadoTraumaTurno = 0
 
-            for(med in listaMedicos){
-                med.ocupado = false
+            for(med in Nave.listaMedicos){
+                med.estaLibre()
             }
 
             //En cada turno distribuyo a los médicos al azar
-            listaMedicos.shuffle()
+            Nave.distribuirMedicos()
         }
 
     }while (segundo < Constantes.DURACION_DIA*Constantes.DIAS)

@@ -13,7 +13,7 @@ object Factoria {
     //Creo una lista de 20 nombres para que haya variabilidad suficiente en los nombres de los pacientes y los médicos
     var listaNombres:Array<String> = arrayOf("Pepe","Pepa","Juan","Juana","Miguel","Laura","Estrella","Jesus","Lola","Pedro","Ana","Marta","Eugenio","Veronica","Bruno","Alfonso","Sara","Paula","Ernesto","Wenceslao")
     var listaSeguros:Array<String> = arrayOf("Sanitroopers","Vaderslas","Yodacare")
-    var listaHeridas:Array<String> = arrayOf("quemadura","impacto")
+    var listaHeridas:Array<String> = arrayOf("quemadura","impacto","otros")
 
     fun generarPaciente():Paciente{
         var azarNombre:String = listaNombres[Random.nextInt(0, listaNombres.size)]

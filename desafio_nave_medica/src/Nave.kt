@@ -1,8 +1,10 @@
+import Factorias.Factoria
 import kotlin.random.Random
 
 object Nave {
 
-    var listaSalas:ArrayList<SalaEspera> = ArrayList()
+    val listaSalas:ArrayList<SalaEspera> = ArrayList()
+    val listaMedicos:ArrayList<Medico> = ArrayList()
 
     override fun toString(): String{
         return "La nave médica Nebulón-B Frigate"
@@ -71,6 +73,19 @@ object Nave {
         }
 
         return salaDevuelta
+    }
+
+    fun aniadirSala(i:Int){
+        this.listaSalas.add(Factoria.generarSala(i))
+    }
+
+    fun aniadirMedicos(){ //añade un medico de cada especialidad
+        this.listaMedicos.add(Factoria.generarTraumatologo())
+        this.listaMedicos.add(Factoria.generarInternista())
+    }
+
+    fun distribuirMedicos(){
+        this.listaMedicos.shuffle()
     }
 
     fun verSalas(){
