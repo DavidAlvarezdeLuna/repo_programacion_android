@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "473919717508",
+    "project_id": "datosfirebase-21652",
+    "storage_bucket": "datosfirebase-21652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473919717508:android:1cde114d72b000c1f482d1",
+        "android_client_info": {
+          "package_name": "com.example.datosfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473919717508-tidvegfn0sknia17fdfbboen9qnvq8p2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datosfirebase",
+            "certificate_hash": "d404b492a1da3b204ddf2c65adc1dcf671b69cd2"
+          }
+        },
+        {
+          "client_id": "473919717508-usas19evlj5jvmmo9of847e3fa895t25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDTFpkFCqxmgd3VKlCzxFTKebFMY6_jy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473919717508-usas19evlj5jvmmo9of847e3fa895t25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_maps_creacion.xml" value="0.1796875" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_eleccion_admin.xml" value="0.1796875" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_espera.xml" value="0.22" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_evento_nuevo.xml" value="0.1796875" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_gestion_asistencia.xml" value="0.14666666666666667" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_gestion_eventos.xml" value="0.1796875" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_gestion_usuarios.xml" value="0.22" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_info_asistencia.xml" value="0.1796875" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_opciones_admin.xml" value="0.1796875" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_perfil.xml" value="0.165625" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/activity_ventana_usuario.xml" value="0.16666666666666666" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/item_card_asistencia.xml" value="0.22" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/item_card_eventos.xml" value="0.16666666666666666" />
+        <entry key="..\:/repositorio_android/repo_programacion_android/desafio_viaje/app/src/main/res/layout/item_card_gestion_usuarios.xml" value="0.4466666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

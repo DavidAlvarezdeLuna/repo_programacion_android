@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConsultasFirestore</string>
+    <string name="prefs_file">com.example.consultasfirestore.PREFERENCE_FILE_KEY</string>
+    <string name="request_id_token">480620771135-9q1egqq2nq589duhprogaitr52666qfj.apps.googleusercontent.com</string>
+</resources>

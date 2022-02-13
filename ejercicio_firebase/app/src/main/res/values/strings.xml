@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ejercicio_firebase</string>
+    <string name="prefs_file">com.example.ejercicio_firebase.PREFERENCE_FILE_KEY</string>
+    <string name="request_id_token">445374480800-fs11rb8t936fu55rpq9kshn3gm1f4anb.apps.googleusercontent.com</string>
+    <!--El token aparece en el json que descargamos de firebase. Es el client_id que esta encima de client_type: 3 -->
+</resources>

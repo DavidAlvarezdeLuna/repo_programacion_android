@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "376065347549",
+    "project_id": "ejquedadas",
+    "storage_bucket": "ejquedadas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376065347549:android:d4b7fa2bb8fd59a52d7034",
+        "android_client_info": {
+          "package_name": "com.example.ejquedadas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376065347549-k5r3b4c5uokk3mj4ngkdcqombjonvijq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ejquedadas",
+            "certificate_hash": "68635ab64d5f8c3e9b7e8e0ea78b5c90f0d9261d"
+          }
+        },
+        {
+          "client_id": "376065347549-d831upb4inoo2fp41beiab92sqbdompm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrxoIKR-1J6TDqhic-7aS0PZAY2Pmc5gM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376065347549-d831upb4inoo2fp41beiab92sqbdompm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ejquedadas</string>
+    <string name="request_id_token">376065347549-d831upb4inoo2fp41beiab92sqbdompm.apps.googleusercontent.com</string>
+    <string name="prefs_file">com.example.ejquedadas.PREFERENCE_FILE_KEY</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps_crear_evento">MapsCrearEvento</string>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Datos Firebase</string>
+    <string name="prefs_file">com.example.datosfirebase.PREFERENCE_FILE_KEY</string>
+    <string name="request_id_token">473919717508-usas19evlj5jvmmo9of847e3fa895t25.apps.googleusercontent.com</string>
+</resources>

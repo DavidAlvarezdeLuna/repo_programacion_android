@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "645497278459",
+    "project_id": "desafioviaje",
+    "storage_bucket": "desafioviaje.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645497278459:android:2f9a9a543211293e30055e",
+        "android_client_info": {
+          "package_name": "com.example.desafio_viaje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645497278459-c0prch0s7reqcc9ehmltk15he4knm045.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.desafio_viaje",
+            "certificate_hash": "bda117121021519e0384f21e01d0ef7f88446b74"
+          }
+        },
+        {
+          "client_id": "645497278459-j9sfbbo030vebcvs9hhjvs5jlh25dfrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgZcX6PFKb0XxYHbAUFVe7qVoEl25BOqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645497278459-j9sfbbo030vebcvs9hhjvs5jlh25dfrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

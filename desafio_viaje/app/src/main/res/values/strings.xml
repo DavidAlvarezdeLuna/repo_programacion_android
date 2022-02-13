@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">desafio_viaje</string>
+    <string name="prefs_file">com.example.desafio_viaje.PREFERENCE_FILE_KEY</string>
+    <string name="request_id_token">645497278459-j9sfbbo030vebcvs9hhjvs5jlh25dfrp.apps.googleusercontent.com</string>
+    <string name="title_activity_maps_creacion">MapsCreacion</string>
+    <string name="title_activity_mi_maps">MiMapsActivity</string>
+</resources>

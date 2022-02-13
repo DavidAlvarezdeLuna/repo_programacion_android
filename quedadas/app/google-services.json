@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "204438930346",
+    "project_id": "quedadas-e5043",
+    "storage_bucket": "quedadas-e5043.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204438930346:android:e646c19d42a17646e321d3",
+        "android_client_info": {
+          "package_name": "com.example.quedadas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204438930346-pqsspn5r1l5gc2pdurn0vs66c1d1u7vk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quedadas",
+            "certificate_hash": "bda117121021519e0384f21e01d0ef7f88446b74"
+          }
+        },
+        {
+          "client_id": "204438930346-6ealv17j7p9253iblga5s8htoumpi2gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp9q01M3XV-oe5h4MGwAJE3MoKgfuEEPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204438930346-6ealv17j7p9253iblga5s8htoumpi2gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
