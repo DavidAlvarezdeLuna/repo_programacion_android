@@ -2,11 +2,8 @@ package Adaptadores
 
 import Modelo.Evento
 import android.app.Activity
-import android.app.AlertDialog
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +12,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.desafio_viaje.MiMapsActivity
 import com.example.desafio_viaje.R
-import com.example.desafio_viaje.VentanaInfoAsistencia
+import com.example.desafio_viaje.VentanaInfoEvento
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -90,7 +87,7 @@ class MiAdaptadorRecyclerUsuarioEventos(var eventos : ArrayList<Evento>, var  co
 
                     Toast.makeText(context, "Valor seleccionado " +  MiAdaptadorRecyclerUsuarioEventos.seleccionado.toString(), Toast.LENGTH_SHORT).show()
 
-                    var intentV1 = Intent(context, VentanaInfoAsistencia::class.java)
+                    var intentV1 = Intent(context, VentanaInfoEvento::class.java)
                     intentV1.putExtra("even",eve)
                     context.startActivity(intentV1)
                     (context as Activity).finish()

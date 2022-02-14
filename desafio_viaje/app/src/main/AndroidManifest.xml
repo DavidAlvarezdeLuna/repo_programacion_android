@@ -37,6 +37,10 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".MapsUbicacion"
+            android:exported="false"
+            android:label="@string/title_activity_maps_ubicacion" />
+        <activity
             android:name=".MiMapsActivity"
             android:exported="false"
             android:label="@string/title_activity_mi_maps" />
@@ -44,7 +48,7 @@
             android:name=".VentanaPerfil"
             android:exported="false" />
         <activity
-            android:name=".VentanaInfoAsistencia"
+            android:name=".VentanaInfoEvento"
             android:exported="false" />
         <activity
             android:name=".VentanaGestionAsistencia"

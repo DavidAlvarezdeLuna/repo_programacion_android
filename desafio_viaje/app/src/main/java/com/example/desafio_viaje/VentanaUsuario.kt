@@ -2,7 +2,9 @@ package com.example.desafio_viaje
 
 import Adaptadores.MiAdaptadorRecyclerUsuarioEventos
 import Modelo.Asistencia
+import Modelo.Comentario
 import Modelo.Evento
+import Modelo.Ubicacion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -104,6 +106,41 @@ class VentanaUsuario : AppCompatActivity() {
                 } else {
                     asistencias = arrayListOf()
                 }
+
+                var comentarios: ArrayList<Comentario> = ArrayList()
+                var ArrayHashComentarios:ArrayList<HashMap<String, Comentario>> = ArrayList()
+
+                if (dc.document.get("comentarios") != null) {
+
+                    ArrayHashComentarios = dc.document.get("comentarios") as ArrayList<HashMap<String, Comentario>>
+
+                    for (hashcom in ArrayHashComentarios){
+                        var com: Comentario = Comentario(hashcom["correo"].toString(),hashcom["fechahora"].toString(),hashcom["texto"].toString())
+                        comentarios.add(com)
+                    }
+
+                } else {
+                    comentarios = arrayListOf()
+                }
+
+
+                var ubicaciones: ArrayList<Ubicacion> = ArrayList()
+                var ArrayHashUbicaciones:ArrayList<HashMap<String, Ubicacion>> = ArrayList()
+
+                if (dc.document.get("ubicaciones") != null) {
+
+                    ArrayHashUbicaciones = dc.document.get("ubicaciones") as ArrayList<HashMap<String, Ubicacion>>
+
+                    for (hashubi in ArrayHashUbicaciones){
+                        var ubi: Ubicacion = Ubicacion(hashubi["descripcion"].toString(),hashubi["latitud"].toString().toDouble(),hashubi["longitud"].toString().toDouble())
+                        ubicaciones.add(ubi)
+                    }
+
+                } else {
+                    ubicaciones = arrayListOf()
+                }
+
+
                 var al = Evento(
                     dc.document.get("codigo").toString(),
                     dc.document.get("nombre").toString(),
@@ -111,7 +148,9 @@ class VentanaUsuario : AppCompatActivity() {
                     dc.document.get("fechahora").toString(),
                     dc.document.get("latitud").toString().toDouble(),
                     dc.document.get("longitud").toString().toDouble(),
-                    asistencias
+                    asistencias,
+                    comentarios,
+                    ubicaciones
                 )
                 //Log.e(TAG, al.toString())
                 miArray.add(al)

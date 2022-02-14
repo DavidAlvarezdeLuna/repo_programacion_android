@@ -1,6 +1,8 @@
 package com.example.desafio_viaje
 
 import Modelo.Asistencia
+import Modelo.Comentario
+import Modelo.Ubicacion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -64,7 +66,9 @@ class VentanaEventoNuevo : AppCompatActivity() {
                 "fechahora" to txtFechahoraC.text.toString(),
                 "latitud" to txtLatitudC.text.toString(),
                 "longitud" to txtLongitudC.text.toString(),
-                "asistencias" to ArrayList<Asistencia>()
+                "asistencias" to ArrayList<Asistencia>(),
+                "comentarios" to ArrayList<Comentario>(),
+                "ubicaciones" to ArrayList<Ubicacion>()
             )
 
             // Add a new document with a generated ID
