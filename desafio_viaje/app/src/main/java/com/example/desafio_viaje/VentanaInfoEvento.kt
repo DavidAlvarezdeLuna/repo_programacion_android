@@ -91,7 +91,15 @@ class VentanaInfoEvento : AppCompatActivity() {
             Toast.makeText(this, "Escribe un titulo para el marcador...", Toast.LENGTH_SHORT).show()
         }
 
+    }
 
+    fun abrirFotos(view:View){
+
+        var eve: Evento = intent.getSerializableExtra("even") as Evento
+
+        var intentV1 = Intent(this, VentanaFotos::class.java)
+        intentV1.putExtra("even",eve)
+        this.startActivity(intentV1)
     }
 
 

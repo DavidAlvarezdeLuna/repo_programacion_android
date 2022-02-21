@@ -75,6 +75,7 @@
         android:id="@+id/btn_ver_fotos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="abrirFotos"
         android:text="Ver fotos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
