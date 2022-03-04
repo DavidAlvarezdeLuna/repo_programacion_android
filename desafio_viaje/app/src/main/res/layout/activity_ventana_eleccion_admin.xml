@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".VentanaEleccionAdmin">
 
     <TextView
         android:id="@+id/textView"
+        style="@style/cabeceras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SELECCIONA OPCIÓN"
@@ -21,6 +23,7 @@
 
     <Button
         android:id="@+id/btn_acceso_admin"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="accesoAdministrador"
@@ -34,6 +37,7 @@
 
     <Button
         android:id="@+id/btn_acceso_usuario"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="accesoUsuario"
@@ -47,6 +51,7 @@
 
     <Button
         android:id="@+id/btn_salir_eleccion_admin"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volverEleccionAdmin"

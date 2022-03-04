@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".VentanaEventoNuevo">
 
     <EditText
@@ -86,6 +87,7 @@
 
     <Button
         android:id="@+id/btn_cancelar_crear"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cancelarCrear"
@@ -99,6 +101,7 @@
 
     <Button
         android:id="@+id/btn_aceptar_crear"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="crearEvento"
@@ -164,6 +167,7 @@
 
     <TextView
         android:id="@+id/textView9"
+        style="@style/cabeceras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TITULO DE LA QUEDADA"
@@ -194,6 +198,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:onClick="irMapa"
+        app:backgroundTint="@color/turquesa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.338"

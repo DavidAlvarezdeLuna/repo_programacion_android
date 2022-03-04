@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".VentanaPerfil">
 
     <TextView
         android:id="@+id/txt_perfil_correo"
+        style="@style/cabeceras"
         android:layout_width="335dp"
         android:layout_height="41dp"
         android:text="TextView"
@@ -100,6 +102,7 @@
 
     <Button
         android:id="@+id/btn_volver_perfil"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volver"
@@ -113,6 +116,7 @@
 
     <Button
         android:id="@+id/btn_guardar_perfil"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="guardarPerfil"

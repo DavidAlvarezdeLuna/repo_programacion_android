@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".VentanaGestionUsuarios">
 
     <TextView
         android:id="@+id/textView5"
+        style="@style/cabeceras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ventana gestion usuarios"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +32,7 @@
 
     <Button
         android:id="@+id/btn_volver_gestion_usuario"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volver"

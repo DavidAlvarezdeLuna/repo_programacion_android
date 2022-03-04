@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".VentanaFotos">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -32,10 +33,11 @@
 
     <TextView
         android:id="@+id/textView15"
+        style="@style/cabeceras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sube tus fotos!!"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -45,6 +47,7 @@
 
     <Button
         android:id="@+id/btn_subir_foto"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cargarFoto"

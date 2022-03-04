@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     tools:context=".VentanaGestionEventos">
 
     <TextView
         android:id="@+id/textView4"
+        style="@style/cabeceras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ventana gestion eventos"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -30,6 +33,7 @@
 
     <Button
         android:id="@+id/btn_salir_gestion_eventos"
+        style="@style/botones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="volver"
@@ -60,6 +64,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:onClick="accederVentanaCrear"
+        app:backgroundTint="@color/turquesa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.701"

@@ -7,7 +7,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="184dp">
+        android:layout_height="184dp"
+        android:background="@color/beige">
 
         <ImageView
             android:id="@+id/img_imagen"
